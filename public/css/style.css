@@ -222,17 +222,35 @@ footer{
 
 }
 
+
+
+@media (max-width: 375px){
+
+  
+
+  footer a img {
+    margin: 3% 42%;
+
+  }
+  footer a:hover {
+    margin: 3% 42%;
+
+  }
+
+
 }
 
-
-
-@media (max-width: 640px){
-
+@media (max-width: 653px){
 .imgLogo{
   visibility: hidden;
   width: 1%;
   height: 1%;
 }
+}
+
+@media (max-width: 640px){
+
+
 footer{
   flex-direction: column;
   justify-content: space-around;
@@ -245,23 +263,20 @@ footer{
   }
 
   footer a img{
-    margin: 0 42%;
+    margin: 3% 45%;
    }
    
    footer a:hover{
-    margin: 0 42%;
+    margin: 3% 45%;
    }
 
 }
 
 
-@media (max-width: 568px){
-footer a img {
-    margin: 0% 45%;
-}
-}
 
-@media (max-width: 360px){
+
+@media (max-width: 340px){
+  
 
   .textML a{
   font-size:1em;
@@ -276,4 +291,36 @@ footer a img {
 .navbar-brand>img {
   width: 60%;
 }
+}
+@media (max-width: 320px){
+
+  .textML a{
+  font-size:0.9em;
+  }
+
+  footer a img {
+    margin: 3% 42%;
+
+  }
+  footer a:hover {
+    margin: 3% 42%;
+
+  }
+
+  .navbar-toggler {
+    padding: 0 ;
+}
+}
+@media (max-width: 280px){
+
+  .textML a{
+    font-size:0.8em;
+    }
+    .textML img{
+      width: 40%;
+       }
+
+
+}
+
 }
