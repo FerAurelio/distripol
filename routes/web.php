@@ -14,6 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('index');
+});
+
+
+Route::get('/', function () {
     return view('/layouts/master');
 });
 
+Route::get('/home', 'HomeController@directory')->name('home');
+
+Route::get('/productos',  'IndexController@index')->name('productos');
+
+Route::get('/',  'IndexController@index')->name('productos');
+
+Route::get('/servicios',  'ServiciosController@directory')->name('servicios');
+
+Route::get('/contacto',  'ContactoController@directory')->name('contacto');
+
+Route::get('/cotizar',  'CotizarController@directory')->name('cotizar');
