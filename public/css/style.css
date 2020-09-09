@@ -46,6 +46,119 @@ a {
     text-decoration: none;
 }
 
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main .asideLeft {
+    display: flex;
+    justify-content: center;
+    width: 18%;
+    padding: 3.8% 0;
+}
+
+main .asideRight {
+    display: flex;
+    justify-content: center;
+    width: 18%;
+    padding: 3.8% 0;
+}
+
+
+/*La Empresa*/
+
+main .sectionEmp {
+    width: 64%;
+}
+
+main h1 {
+    color: #006837;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionEmp .pEm {
+    border-left: 5px solid #006837;
+    padding: 10px;
+    font-weight: 200;
+}
+
+
+/*Servicios*/
+
+main .sectionSer {
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.sectionSer p i {
+    color: #006837;
+    padding: 5px 10px;
+    font-size: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.i {
+    width: 50px;
+}
+
+.sectionSer div {
+    display: flex;
+    align-items: center;
+}
+
+.sectionSer h1 {
+    color: #006837;
+    padding: 30px 0;
+}
+
+.sectionSer p {
+    padding: 0 5%;
+}
+
+
+/*Contacto*/
+
+main .sectionCon {
+    width: 55%;
+}
+
+main .asideLeftCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 15%;
+    margin-top: 5%;
+}
+
+.leftCon {
+    background-color: #006837;
+    color: white;
+    margin: 5px 0;
+    text-align: center;
+    padding: 10px;
+    height: auto;
+}
+
+.divLeft {
+    background-color: #028849;
+    margin: 0 15px;
+    font-size: 0.8em;
+}
+
+main .asideRightCon {
+    display: flex;
+    justify-content: center;
+    width: 24%;
+    padding: 3.8% 0;
+}
+
 
 /* navbar */
 
