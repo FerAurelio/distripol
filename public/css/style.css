@@ -52,9 +52,16 @@ main {
     justify-content: space-around;
 }
 
+.mainCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 main .asideLeft {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 18%;
     padding: 3.8% 0;
 }
@@ -62,6 +69,7 @@ main .asideLeft {
 main .asideRight {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 18%;
     padding: 3.8% 0;
 }
@@ -122,19 +130,41 @@ main .sectionSer {
     padding: 0 5%;
 }
 
+.asideLeftSer {
+    background-image: url("../img/berlingo-.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 70%;
+    width: 20%;
+    margin-top: 5%;
+}
+
+main .asideRightSer {
+    display: flex;
+    justify-content: center;
+    width: 24%;
+    padding: 3.8% 0;
+    align-items: center;
+}
+
+.sectionSer>div {
+    margin: 5px 0px;
+}
+
 
 /*Contacto*/
 
-main .sectionCon {
+.sectionCon {
     width: 55%;
 }
 
-main .asideLeftCon {
+.asideLeftCon {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 15%;
-    margin-top: 5%;
+    width: 20%;
+    margin-top: 10%;
+    align-items: center;
 }
 
 .leftCon {
@@ -152,11 +182,15 @@ main .asideLeftCon {
     font-size: 0.8em;
 }
 
-main .asideRightCon {
+.asideRightCon {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     width: 24%;
     padding: 3.8% 0;
+    align-items: center;
+    margin-right: 15px;
 }
 
 
@@ -277,7 +311,6 @@ h4 {
     text-decoration: none;
     color: white;
     font-size: 2em;
-    margin: 0 25%;
 }
 
 .footerText a:hover {
@@ -311,36 +344,82 @@ h1 {
     .navbar-brand>img {
         width: 80%;
     }
+    main .sectionEmp {
+        width: 60%;
+    }
+    main .sectionSer {
+        width: 60%;
+    }
+    .sectionCon {
+        width: 60%;
+    }
 }
 
 @media (max-width: 823px) {
     footer {
         flex-wrap: wrap;
-    }
-    footer {
         flex-direction: row;
         justify-content: space-around;
     }
+    h4 {
+        font-size: 0.9em;
+        margin: 15px 0
+    }
     .footerText {
-        text-align: center;
-        margin: 2%;
-        padding: 50px;
+        font-size: 0.7em;
     }
     footer a img {
-        margin: 0 300px;
+        margin: 15px 10px;
     }
     footer a:hover {
-        margin: 0 300px;
-        padding: 50px;
+        margin: 15px 10px;
     }
-}
-
-@media (max-width: 375px) {
-    footer a img {
-        margin: 3% 42%;
+    /*La empresa*/
+    main .asideLeft {
+        width: 35%;
     }
-    footer a:hover {
-        margin: 3% 42%;
+    main .asideLeft img {
+        width: 20vw;
+    }
+    main .asideRight img {
+        display: none;
+        width: 1%;
+    }
+    main .asideRight {
+        display: none;
+        width: 1%;
+    }
+    main .sectionEmp {
+        width: 75%;
+    }
+    /*servicios*/
+    main .sectionSer {
+        width: 75%;
+    }
+    main .asideRightSer {
+        display: none;
+        width: 0%;
+    }
+    /*contacto*/
+    .sectionCon {
+        width: 75%;
+        margin: auto;
+    }
+    .asideLeftCon {
+        width: 100vw;
+        margin: 10px 0;
+    }
+    .asideRightCon {
+        width: 100%;
+    }
+    .asideRightCon>iframe {
+        width: 80vw;
+    }
+    .mainCon {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 }
 
@@ -349,6 +428,9 @@ h1 {
         visibility: hidden;
         width: 1%;
         height: 1%;
+    }
+    .sectionSer>div:nth-child(-n+4) {
+        border-bottom: 1px solid grey;
     }
 }
 
@@ -361,6 +443,7 @@ h1 {
         text-align: center;
         margin: 0 5%;
         border-bottom: 2px solid #333333;
+        font-size: 0.9em;
     }
     footer a img {
         margin: 3% 45%;
@@ -368,9 +451,63 @@ h1 {
     footer a:hover {
         margin: 3% 45%;
     }
+    h4 {
+        font-size: 1em;
+        margin: 15px 0
+    }
+    /*La empresa*/
+    main {
+        flex-direction: column;
+    }
+    main .asideLeft img {
+        display: none;
+    }
+    main .asideLeft {
+        background-image: url("../img/fachada2.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 8%;
+        width: inherit;
+    }
+    main .asideRight img {
+        display: none;
+        width: 1%;
+    }
+    main .asideRight {
+        display: none;
+        width: 1%;
+    }
+    /*La Empresa*/
+    main .sectionEmp {
+        width: 95%;
+        margin: 0 15px;
+    }
+    main .sectionSer {
+        width: 95%;
+        margin: 0 15px;
+    }
 }
 
-@media (max-width: 340px) {
+@media (max-width:414px) {
+    main .asideLeft {
+        background-size: 414px 200px;
+    }
+}
+
+@media (max-width: 375px) {
+    main .asideLeft {
+        background-size: 360px 150px;
+        padding: 10%;
+    }
+    footer a img {
+        margin: 3% 42%;
+    }
+    footer a:hover {
+        margin: 3% 42%;
+    }
+}
+
+@media (max-width: 360px) {
     .textML a {
         font-size: 1em;
     }
@@ -384,7 +521,7 @@ h1 {
 
 @media (max-width: 320px) {
     .textML a {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
     footer a img {
         margin: 3% 42%;

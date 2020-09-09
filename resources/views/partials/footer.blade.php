@@ -6,16 +6,17 @@
       (líneas rotativas)
     </p>
     </div>
-   <div class="footerText"><h4>WHATSAPP / EMAIL</h4> 
+   <div class="footerText"><h4>WHATSAPP / EMAIL / REDES</h4> 
      <p><i class="fab fa-whatsapp"></i>(54) 11 5859-9644 <br>
-     <i class="far fa-envelope"></i>distripol@distripol.com.ar
+     <i class="far fa-envelope"></i>distripol@distripol.com.ar <br>
+     <a href="https://www.facebook.com/DistripolHerramientasSRL"><i class="fab fa-facebook"></i></a>
      </p>
+     
+  
+    
+
    </div>
-   <div class="footerText"><h4>SEGUINOS</h4>
-    <p>
-    <a href="https://www.facebook.com/DistripolHerramientasSRL"><i class="fab fa-facebook"></i></a>
-    </p>
-  </div>
+   
    <div class="footerText"><h4>UBICACIÓN</h4>
      <p><i class="fas fa-map-marker-alt"></i>Remedios Escalada <br>
      de San Martín 3387 (C1407EVA) <br>
