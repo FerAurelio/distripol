@@ -79,6 +79,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
+            margin-top: 15px;
         }
         
         .susDiv {
@@ -271,7 +272,7 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            background: linear-gradient(to right, white, yellow);
+            background: linear-gradient( to right, white, yellow);
             padding: 5px 15px;
             height: 15%;
         }
@@ -377,7 +378,7 @@
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-            margin: 15px 0;
+            margin: 15px 0 0;
         }
         
         .productos nav ul {
@@ -390,14 +391,18 @@
             align-items: center;
         }
         
-        .productos nav li div a {
+        .productos nav li {
+            width: 20%;
+        }
+        
+        .productos nav li a {
             text-decoration: none;
             font-style: italic;
             color: white;
             text-align: left;
         }
         
-        .productos nav li div a:hover {
+        .productos nav li a:hover {
             color: yellow;
         }
         
@@ -411,6 +416,7 @@
         }
         
         .productos {
+            width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -424,8 +430,8 @@
         }
         
         #link1 {
-            width: 223px;
-            height: 355px;
+            width: 200px;
+            height: 318px;
             background-image: url("../img/botonera-ppal/btn_fdo_const.png");
         }
         
@@ -483,6 +489,34 @@
             background-image: url("../img/botonera-ppal/btn_fdo_herr-H.png");
         }
         
+        #menusProd ul {
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #006837;
+            color: white;
+        }
+        
+        #menusProd ul li a {
+            text-decoration: none;
+            font-style: italic;
+            color: white;
+            text-align: left;
+        }
+        
+        #menusProd ul li a:hover {
+            color: yellow;
+        }
+        
+        @media (max-width: 1280px) {
+            header {
+                font-size: 0.9em;
+            }
+        }
+        
         @media (max-width: 1024px) {
             .navbar-brand {
                 margin-right: 0%;
@@ -505,6 +539,9 @@
         }
         
         @media (max-width: 823px) {
+            header {
+                font-size: 1em;
+            }
             .susDiv {
                 width: 50%;
             }

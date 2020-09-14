@@ -3,6 +3,7 @@ $navAdmin = [
   "Cargar Productos" => "productAdminForm",
 ];
 $navAccess=[
+  "Inicio" => "/",
   "La Empresa" => "/home",
   "Productos" => "/productos",
   "Cotizar" => "/cotizar",
@@ -37,7 +38,7 @@ $secProduct=[
           @foreach ($navAccess as $linkAcc => $links)
             @if ($linkAcc == "Productos")
              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle " href="/productos" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 {{$linkAcc}}
                 </a>
                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
