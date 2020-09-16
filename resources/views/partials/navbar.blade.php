@@ -4,7 +4,7 @@ $navAdmin = [
 ];
 $navAccess=[
   "Inicio" => "/",
-  "La Empresa" => "/home",
+  "Empresa" => "/home",
   "Productos" => "/productos",
   "Cotizar" => "/cotizar",
   "Servicios" => "/servicios",
