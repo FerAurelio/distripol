@@ -84,13 +84,12 @@ menu responsive
 
         <div class="">
             <div class="fdoCon" id="btn-contruccion">
-                <h2 class="mb-0">
-                    <button class="btn-secundario  collapsed " type="button" data-toggle="collapse" 
+                
+            <div><img src="/img/botonera-ppal/btn_fdo_const-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div> <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
                     data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         Construcción, Obra Civil, Obra Vial, y Pisos Industriales
-                    </button>
-                </h2>
-            </div>
+                             </a>
+             </div>
 
             <div id="collapseOne" class="collapse" aria-labelledby="btn-contruccion" data-parent="#accordionExample">
                 <div class="card-body">
@@ -107,13 +106,12 @@ menu responsive
 
 
         <div class="">
-            <div class="" id="btn-marmoleria">
-                <h2 class="mb-0">
-                    <button class="btn-secundario collapsed" type="button" 
-                    data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Marmolería y Piedras Industriales
-                    </button>
-                </h2>
+            <div class="fdoCon" id="btn-marmoleria">
+            <div><img src="/img/botonera-ppal/btn_fdo_marm-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div> <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                     Marmolería y Piedras Industriales
+</a>
+               
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="btn-marmoleria" data-parent="#accordionExample">
                 <div class="card-body">
@@ -128,13 +126,12 @@ menu responsive
 
 
         <div class="">
-            <div class="" id="btn-desbaste">
-                <h2 class="mb-0">
-                    <button class="btn-secundario  collapsed" type="button" 
-                    data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Desbaste, Pulido y Lustrado
-                    </button>
-                </h2>
+            <div class="fdoCon" id="btn-desbaste">
+            <div><img src="/img/botonera-ppal/btn_fdo_des-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div> <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Desbaste, Pulido y Lustrado
+</a>
+                
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="btn-desbaste" data-parent="#accordionExample">
                 <div class="card-body">
@@ -153,37 +150,34 @@ menu responsive
 
 
         <div class="">
-            <div class="" id="btn-gress">
-                <h2 class="mb-0">
-                    <button class="btn-secundario collapsed" type="button" 
-                    data-toggle="collapse" data-target="" aria-expanded="false" aria-controls="collapseFour">
-                        Gress, Porcelanato y Cerámicas
-                    </button>
-                </h2>
+            <div class="fdoCon" id="btn-gress">
+            <div><img src="/img/botonera-ppal/btn_fdo_gress-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div> <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Gress, Porcelanato y Cerámicas
+</a>
+               
             </div>
         </div>
 
 
         <div class="">
-            <div class="" id="btn-mosaicos">
-                <h2 class="mb-0">
-                    <button class="btn-secundario collapsed" type="button" 
-                    data-toggle="collapse" data-target="" aria-expanded="false" aria-controls="collapseFive">
-                        Mosaicos, Refractarios y Viguetas
-                    </button>
-                </h2>
+            <div class="fdoCon" id="btn-mosaicos">
+            <div><img src="/img/botonera-ppal/btn_fdo_mos-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div> <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Mosaicos, Refractarios y Viguetas
+</a>
+               
             </div>
         </div>
 
 
         <div class="">
-            <div class="" id="btn-maquinas">
-                <h2 class="mb-0">
-                    <button class="btn-secundario collapsed" type="button" 
-                    data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        Máquinas, Equipamiento, Seguridad y Accesorios
-                    </button>
-                </h2>
+            <div class="fdoCon" id="btn-maquinas">
+            <div><img src="/img/botonera-ppal/btn_fdo_herr-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div> <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Máquinas, Equipamiento, Seguridad y Accesorios
+</a>
+              
             </div>
             <div id="collapseSix" class="collapse" aria-labelledby="btn-maquinas" data-parent="#accordionExample">
                 <div class="card-body">
