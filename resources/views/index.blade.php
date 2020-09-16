@@ -51,7 +51,7 @@
         <div id="menuMarmoleria" style="display: none; border-top:7px solid yellowgreen">
             <ul style=" justify-content:flex-start;">
                 <li><a style="margin:0 85px;" href="/marmoleriaCorte">Corte</a></li>
-                <li><a style="margin:0 85px;" href="/marmoleriaAdhesivos">Perforado</a></li>
+                <li><a style="margin:0 85px;" href="/marmoleriaAdhesivos">Adhesivos y Selladores</a></li>
             </ul>
         </div>
         <div id="menuDesbaste" style="display: none; border-top:7px solid #ff931e">
@@ -82,111 +82,121 @@ menu responsive
 
     <div class="accordion" id="accordionExample">
 
-        <div class="">
+        
             <div class="fdoCon" id="btn-contruccion">
                 
-            <div><img src="/img/botonera-ppal/btn_fdo_const-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div> <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
-                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
+                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><div><img src="/img/botonera-ppal/btn_fdo_const-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div>
                         Construcción, Obra Civil, Obra Vial, y Pisos Industriales
                              </a>
              </div>
 
             <div id="collapseOne" class="collapse" aria-labelledby="btn-contruccion" data-parent="#accordionExample">
-                <div class="card-body">
-                    <ul>
-                        <li><a href="/construccionCorte">Corte</a></li>
-                        <li><a href="/construccionPerforado">Perforado</a></li>
-                        <li><a href="/construccionDesbaste">Desbaste / Pulido</a></li>
-                        <li><a href="/construccionDemolicion">Demolición</a></li>
-                        <li><a href="/construccionAdhesivos">Adhesivos y Selladores</a></li>
+                <div class="card card-body fdoMenuColl">
+                    <ul >
+                        <li><a class="MenColl" href="/construccionCorte">Corte</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="MenColl" href="/construccionPerforado">Perforado</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="MenColl" href="/construccionDesbaste">Desbaste / Pulido</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="MenColl" href="/construccionDemolicion">Demolición</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="MenColl" href="/construccionAdhesivos">Adhesivos y Selladores</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
+        
 
 
-        <div class="">
+        
             <div class="fdoCon" id="btn-marmoleria">
-            <div><img src="/img/botonera-ppal/btn_fdo_marm-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div> <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
-                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <a class="btn-secundario  collapsed " href="#collapseTwo" data-toggle="collapse" 
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> <div><img src="/img/botonera-ppal/btn_fdo_marm-ch.png" alt="Marmolería y Piedras Industriales"></div>
                      Marmolería y Piedras Industriales
-</a>
+              </a>
                
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="btn-marmoleria" data-parent="#accordionExample">
-                <div class="card-body">
+                <div class="card card-body fdoMenuColl">
                     <ul>
-                        <li><a href="/construccionCorte">Corte</a></li>
-                        <li><a href="/construccionPerforado">Perforado</a></li>
+                        <li><a class="MenColl" href="/marmoleriaCorte">Corte</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="MenColl" href="/marmoleriaAdhesivos">Adhesivos y Selladores</a></li>
 
                     </ul>
                 </div>
             </div>
-        </div>
+        
 
 
-        <div class="">
+        
             <div class="fdoCon" id="btn-desbaste">
-            <div><img src="/img/botonera-ppal/btn_fdo_des-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div> <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
-                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <a class="btn-secundario  collapsed " href="#collapseThree" data-toggle="collapse" 
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><div><img src="/img/botonera-ppal/btn_fdo_des-ch.png" alt="Desbaste, Pulido y Lustrado"></div> 
                     Desbaste, Pulido y Lustrado
-</a>
+             </a>
                 
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="btn-desbaste" data-parent="#accordionExample">
-                <div class="card-body">
+                <div class="card card-body fdoMenuColl">
 
                     <ul>
-                        <li><a href="/construccionCorte">Corte</a></li>
-                        <li><a href="/construccionPerforado">Perforado</a></li>
-                        <li><a href="/construccionDesbaste">Desbaste / Pulido</a></li>
-                        <li><a href="/construccionDemolicion">Demolición</a></li>
-                        <li><a href="/construccionAdhesivos">Adhesivos y Selladores</a></li>
+                        <li><a class="MenColl" href="/desbastePlatosPulidores">Platos Pulidores</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="MenColl" href="/desbasteRinconeras">Rinconeras</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="MenColl" href="/desbasteFresasMuelas">Fresas y Muelas</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="MenColl" href="/desbastePulido">Pulido de Mármol y/o Granito</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="MenColl" href="/desbasteLustrado">Insumos para Lustrado</a></li>
                     </ul>
+
+
 
                 </div>
             </div>
-        </div>
+        
 
 
-        <div class="">
+        
             <div class="fdoCon" id="btn-gress">
-            <div><img src="/img/botonera-ppal/btn_fdo_gress-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div> <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
-                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <a class="btn-secundario collapsed" href="/gress"><div><img src="/img/botonera-ppal/btn_fdo_gress-ch.png" alt="Gress, Porcelanato y Cerámicas "></div> 
                     Gress, Porcelanato y Cerámicas
-</a>
+                      </a>
                
             </div>
-        </div>
+        
 
 
-        <div class="">
+      
             <div class="fdoCon" id="btn-mosaicos">
-            <div><img src="/img/botonera-ppal/btn_fdo_mos-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div> <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
-                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <a class="btn-secundario collapsed" href="/mosaicos"> <div><img src="/img/botonera-ppal/btn_fdo_mos-ch.png" alt=" Mosaicos, Refractarios y Viguetas"></div> 
                     Mosaicos, Refractarios y Viguetas
-</a>
+                       </a>
                
             </div>
-        </div>
+        
 
 
-        <div class="">
+        
             <div class="fdoCon" id="btn-maquinas">
-            <div><img src="/img/botonera-ppal/btn_fdo_herr-ch.png" alt=" Construcción, Obra Civil, Obra Vial, y Pisos Industriales"></div> <a class="btn-secundario  collapsed " href="#collapseOne" data-toggle="collapse" 
-                    data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <a class="btn-secundario  collapsed " href="#collapseSix" data-toggle="collapse" 
+                    data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix"><div><img  src="/img/botonera-ppal/btn_fdo_herr-ch.png"  alt=" Máquinas, Equipamiento, Seguridad y Accesorios"></div> 
                     Máquinas, Equipamiento, Seguridad y Accesorios
 </a>
               
             </div>
             <div id="collapseSix" class="collapse" aria-labelledby="btn-maquinas" data-parent="#accordionExample">
-                <div class="card-body">
+                <div class="card card-body fdoMenuColl">
 
                     <ul>
-                        <li><a href="/construccionCorte">Corte</a></li>
-                        <li><a href="/construccionPerforado">Perforado</a></li>
+                        <li><a class="MenColl" href="/herramientas">Herramientas Eléctricas y con Motor a Explosión</a></li>
+                        <div class="dropdown-divider"></div>
+                        <li><a class="MenColl" href="/seguridad">Seguridad y Protección Personal</a></li>
                     </ul>
-
+                    
                 </div>
             </div>
         </div>
