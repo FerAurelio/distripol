@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300;1,400;1,700&display=swap');
-@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css");
-@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css");
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
 @import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
 * {
@@ -579,6 +577,7 @@ h1 {
         align-items: center;
         border-bottom: 3px solid #e6e6e6;
         padding-right: 15px;
+        text-align: right;
     }
     a.btn-secundario {
         width: 100vw;
@@ -590,6 +589,7 @@ h1 {
         justify-content: space-between;
         padding-right: 15px;
         align-items: center;
+        text-align: right;
     }
     a.btn-secundario:hover {
         color: yellow;
@@ -693,8 +693,6 @@ h1 {
         align-items: flex-start;
     }
 }
-
-@media (max-width:768px) {}
 
 @media (max-width: 736px) {
     .susDiv {

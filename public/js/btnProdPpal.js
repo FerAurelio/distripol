@@ -2,7 +2,7 @@ console.log('hola');
 
 var MC = document.getElementById("menuConstruccion");
 var MMar = document.getElementById("menuMarmoleria");
-var MD = document.getElementById("menuDesbaste");
+var MD = document.getElementById("menuIndustriales");
 var MMaq = document.getElementById("menuMaquinas");
 var L1 = document.getElementById("link1");
 var L2 = document.getElementById("link2");
@@ -54,7 +54,7 @@ function marmoleria() {
     }
 }
 
-function desbaste() {
+function industriales() {
     if (MD.style.display == "flex" && L3.style.backgroundImage == "url('./img/botonera-ppal/btn_fdo_des-H.png')") {
         MC.style.display = "none";
         MMar.style.display = "none";
