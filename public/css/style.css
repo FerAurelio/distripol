@@ -56,6 +56,52 @@ main {
     justify-content: space-around;
 }
 
+.menuLeft {
+    width: 15%;
+    background-color: #d6d6d6;
+    margin-right: 1%;
+}
+
+.menuLeft li div {
+    background-color: #c2c2c2;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.menuLeft li div:hover {
+    background-color: #006837;
+}
+
+.menuLeft li a {
+    color: black;
+}
+
+.menuLeft li a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+.containerP {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contenidoProds {
+    width: 79%;
+    background-color: white;
+}
+
+.contenidoProds div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
 main .asideLeft {
     display: flex;
     justify-content: center;
@@ -524,9 +570,41 @@ h1 {
     display: none;
 }
 
+.fdoBt {
+    width: 100%;
+    height: 65px;
+    background-color: #666666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.fdoBt:hover {
+    background-color: #006837;
+}
+
+main.productos>nav>ul>li.fdoBt>a>div>h2 {
+    font-size: 0.8em;
+    text-align: center;
+    padding-right: 5x;
+}
+
+h6 {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.card-header {
+    text-align: center;
+}
+
 @media (max-width: 1280px) {
     header {
         font-size: 0.9em;
+    }
+    .susDiv {
+        width: 40%;
     }
 }
 
@@ -554,6 +632,11 @@ h1 {
 @media (max-width: 1023px) {
     div#acordionExample.acordion {
         width: 100%;
+    }
+    .productos nav li {
+        display: none;
+        width: 1px;
+        height: 1px;
     }
     .productos nav li div {
         display: none;
@@ -778,6 +861,9 @@ h1 {
     main .asideLeft {
         background-size: 414px 200px;
     }
+    .fdoCon {
+        font-size: 1em;
+    }
 }
 
 @media (max-width: 375px) {
@@ -808,6 +894,9 @@ h1 {
     }
     .navbar-brand>img {
         width: 60%;
+    }
+    .fdoCon {
+        font-size: 0.9em;
     }
 }
 

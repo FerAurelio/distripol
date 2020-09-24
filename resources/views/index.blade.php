@@ -41,34 +41,34 @@
     <nav id="menusProd">
         <div id="menuConstruccion" style="display: none; border-top:7px solid yellow">
             <ul>
-                <li><a href="/construccionCorte">Corte</a></li>
-                <li><a href="/construccionPerforado">Perforado</a></li>
-                <li><a href="/construccionDemolicion">Demolición</a></li>
-                <li><a href="/construccionAdhesivos">Adhesivos y Selladores</a></li>
+                <li><a href="/construccion/corte">Corte</a></li>
+                <li><a href="/construccion/perforado">Perforado</a></li>
+                <li><a href="/construccion/demolicion">Demolición</a></li>
+                <li><a href="/construccion/adhesivos">Adhesivos y Selladores</a></li>
             </ul>
         </div>
         <div id="menuMarmoleria" style="display: none; border-top:7px solid yellowgreen">
             <ul >
-              <li><a  href="/marmoleriaCorte">Corte</a></li>
-              <li><a href="/marmoleriaPerforado">Perforado</a></li>
-              <li><a href="/marmoleriaDesbaste">Desbaste / Pulido / Lustrado</a></li>
-              <li><a href="/marmoleriaAdhesivos">Adhesivos y Selladores</a></li>
-              <li><a href="/marmoleriaEquipos">Accesorios y Equipos</a></li>
+              <li><a  href="/marmoleria/corte">Corte</a></li>
+              <li><a href="/marmoleria/perforado">Perforado</a></li>
+              <li><a href="/marmoleria/desbaste">Desbaste / Pulido / Lustrado</a></li>
+              <li><a href="/marmoleria/adhesivos">Adhesivos y Selladores</a></li>
+              <li><a href="/marmoleria/equipos">Accesorios y Equipos</a></li>
             </ul>
         </div>
         <div id="menuIndustriales" style="display: none; border-top:7px solid #ff931e">
             <ul>
-            <li><a href="/industrialesCorte">Corte</a></li>
-            <li><a href="/industrialesPerforado">Perforado</a></li>
-            <li><a href="/industrialesPulido">Pulido</a></li>
-            <li><a href="/industrialesAdhesivos">Adhesivos y Selladores</a></li>
+            <li><a href="/industriales/corte">Corte</a></li>
+            <li><a href="/industriales/perforado">Perforado</a></li>
+            <li><a href="/industriales/pulido">Pulido</a></li>
+            <li><a href="/industriales/adhesivos">Adhesivos y Selladores</a></li>
             </ul>
         </div>
 
         <div id="menuMaquinas" style="display: none; border-top:7px solid #F41B7A;">
             <ul style=" justify-content:flex-end;">
-                <li><a style="margin:0 85px;" href="/herramientas">Herramientas Eléctricas y con Motor a Explosión</a></li>
-                <li><a style="margin:0 85px;" href="/seguridad">Seguridad y Protección Personal</a></li>
+                <li><a style="margin:0 85px;" href="maquinas/herramientas">Herramientas Eléctricas y con Motor a Explosión</a></li>
+                <li><a style="margin:0 85px;" href="maquinas/seguridad">Seguridad y Protección Personal</a></li>
 
             </ul>
         </div>
@@ -94,13 +94,13 @@ menu responsive
         <div id="collapseOne" class="collapse" aria-labelledby="btn-contruccion" data-parent="#accordionExample">
             <div class="card card-body fdoMenuColl">
                 <ul>
-                    <li><a class="MenColl" href="/construccionCorte">Corte</a></li>
+                    <li><a class="MenColl" href="/construccion/corte">Corte</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/construccionPerforado">Perforado</a></li>
+                    <li><a class="MenColl" href="/construccion/perforado">Perforado</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/construccionDemolicion">Demolición</a></li>
+                    <li><a class="MenColl" href="/construccion/demolicion">Demolición</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/construccionAdhesivos">Adhesivos y Selladores</a></li>
+                    <li><a class="MenColl" href="/construccion/adhesivos">Adhesivos y Selladores</a></li>
                 </ul>
             </div>
         </div>
@@ -120,15 +120,15 @@ menu responsive
         <div id="collapseTwo" class="collapse" aria-labelledby="btn-marmoleria" data-parent="#accordionExample">
             <div class="card card-body fdoMenuColl">
                 <ul>
-                    <li><a class="MenColl" href="/marmoleriaCorte">Corte</a></li>
+                    <li><a class="MenColl" href="/marmoleria/corte">Corte</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/marmoleriaPerforado">Perforado</a></li>
+                    <li><a class="MenColl" href="/marmoleria/perforado">Perforado</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/marmoleriaDesbaste">Desbaste / Pulido / Lustrado</a></li>
+                    <li><a class="MenColl" href="/marmoleria/desbaste">Desbaste / Pulido / Lustrado</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/marmoleriaAdhesivos">Adhesivos y Selladores</a></li>
+                    <li><a class="MenColl" href="/marmoleria/adhesivos">Adhesivos y Selladores</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/marmoleriaEquipos">Accesorios y Equipos</a></li>
+                    <li><a class="MenColl" href="/marmoleria/equipos">Accesorios y Equipos</a></li>
                 </ul>
             </div>
         </div>
@@ -145,13 +145,13 @@ menu responsive
         <div id="collapseThree" class="collapse" aria-labelledby="btn-industriales" data-parent="#accordionExample">
             <div class="card card-body fdoMenuColl">
                 <ul>
-                    <li><a class="MenColl" href="/industrialesCorte">Corte</a></li>
+                    <li><a class="MenColl" href="/industriales/corte">Corte</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/industrialesPerforado">Perforado</a></li>
+                    <li><a class="MenColl" href="/industriales/perforado">Perforado</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/industrialesPulido">Pulido</a></li>
+                    <li><a class="MenColl" href="/industriales/pulido">Pulido</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/industrialesAdhesivos">Adhesivos y Selladores</a></li>
+                    <li><a class="MenColl" href="/industriales/adhesivos">Adhesivos y Selladores</a></li>
                 </ul>
             </div>
         </div>
@@ -195,9 +195,9 @@ menu responsive
             <div class="card card-body fdoMenuColl">
 
                 <ul>
-                    <li><a class="MenColl" href="/herramientas">Herramientas Eléctricas y con Motor a Explosión</a></li>
+                    <li><a class="MenColl" href="/maquinas/herramientas">Herramientas Eléctricas y con Motor a Explosión</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/seguridad">Seguridad y Protección Personal</a></li>
+                    <li><a class="MenColl" href="/maquinas/seguridad">Seguridad y Protección Personal</a></li>
                 </ul>
 
             </div>

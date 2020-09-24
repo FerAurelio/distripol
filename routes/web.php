@@ -24,9 +24,11 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@directory')->name('home');
 
-Route::get('/productos',  'IndexController@index')->name('productos');
+Route::get('/',  'IndexController@index')->name('inicio');
 
-Route::get('/',  'IndexController@index')->name('productos');
+Route::get('/productos', 'ProductoController@directory')->name('productos');
+
+Route::get('/productos/{categoria}/{seccion}', 'ProductoController@showSection')->name('seccion');
 
 Route::get('/servicios',  'ServiciosController@directory')->name('servicios');
 

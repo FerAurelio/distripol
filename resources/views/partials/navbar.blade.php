@@ -11,12 +11,12 @@ $navAccess=[
   "Contacto" => "/contacto",
 ];
 $secProduct=[
-  "Construcción, Obra Civil, Vial y Pisos Industriales" => "/construccion",
-  "Marmolería y Piedras Naturales" => "/marmoleria",
-  "Desbaste, Pulido y Lustrado" => "/desbaste",
+  "Construcción, Obra Civil y Obra Vial" => "/construccion/corte",
+  "Marmolería y Piedras Naturales" => "/marmoleria/corte",
+  "Pisos Industriales" => "/industriales/corte",
   "Gress, Porcelanato y Cerámicas" => "/gress",
   "Mosaicos, Refractarios y Viguetas" => "/mosaicos",
-  "Máquinas, Equipamientos, Seguridad y Accesorios" => "/maquinas",
+  "Máquinas, Equipamientos, Seguridad y Accesorios" => "/maquinas/herramientas",
 ];
 
 ?>
