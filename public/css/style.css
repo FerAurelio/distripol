@@ -94,10 +94,15 @@ main {
     background-color: white;
 }
 
-.contenidoProds div {
+.contenidoProds div.centrarProductos {
+    display: flex;
+    justify-content: center;
+    margin: 0 8vw;
+}
+
+.contenidoProds div.center {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
 }
@@ -417,14 +422,10 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     padding: 15px 0;
-}
-
-.marcas img {
-    width: 30%;
 }
 
 
@@ -606,9 +607,18 @@ h6 {
     .susDiv {
         width: 40%;
     }
+    .contenidoProds div.centrarProductos {
+        margin: 0 5vw;
+    }
+    .marcas img.filaAbajo {
+        width: 14%;
+    }
 }
 
 @media (max-width: 1024px) {
+    .marcas img.filaArriba {
+        width: 20%;
+    }
     .navbar-brand {
         margin-right: 0%;
     }
@@ -626,6 +636,9 @@ h6 {
     }
     .susDiv {
         width: 40%;
+    }
+    .contenidoProds div.centrarProductos {
+        margin: 0 11vw;
     }
 }
 
@@ -700,6 +713,11 @@ h6 {
     }
     a.MenColl:hover {
         color: yellow;
+    }
+    .contenidoProds div.centrarProductos {
+        display: flex;
+        justify-content: center;
+        margin: 0 8vw;
     }
 }
 
@@ -852,8 +870,11 @@ h6 {
 }
 
 @media (max-width:414px) {
-    .marcas img {
-        width: 90%;
+    .marcas img.filaArriba {
+        width: 50%;
+    }
+    .marcas img.filaAbajo {
+        width: 50%;
     }
     .susDiv {
         width: 98%;

@@ -23,8 +23,9 @@
 
     </aside>
     <section class="contenidoProds">
-       <div>
-        <article class="card bg-light m-3" style="width:250px;">
+    <div class="centrarProductos">
+       <div class="center">
+        <article class="card bg-light m-3 " style="width:250px;">
             <div class="card-header">Codigo producto</div>
             <div class="card-body">
                 <figure style="display:flex; justify-content: center;"><img src="/img/construccion/corte/BCR-av-350-25-1.jpg" alt=""></figure>
@@ -82,7 +83,7 @@
             
 
         </article>
-
+        </div>
         </div>
     </section>
 </main>

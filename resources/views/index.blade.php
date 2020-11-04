@@ -12,7 +12,7 @@
                     </a></li>
                 <li><a href="javascript:void(0);" onclick="marmoleria()">
                         <div id="link2">
-                            <h2>Marmolería y <br> Piedras Industriales</h2>
+                            <h2>Marmolería y <br> Piedras Naturales</h2>
                         </div>
                     </a></li>
                 <li><a href="javascript:void(0);" onclick="industriales()">
@@ -99,8 +99,7 @@ menu responsive
                     <li><a class="MenColl" href="/construccion/perforado">Perforado</a></li>
                     <div class="dropdown-divider"></div>
                     <li><a class="MenColl" href="/construccion/demolicion">Demolición</a></li>
-                    <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/construccion/adhesivos">Adhesivos y Selladores</a></li>
+                   
                 </ul>
             </div>
         </div>
