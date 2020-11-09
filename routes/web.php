@@ -28,6 +28,7 @@ Route::get('/',  'IndexController@index')->name('inicio');
 
 Route::get('/productos', 'ProductoController@directory')->name('productos');
 
+Route::get("/productos/{id}", "ProductoController@show");
 Route::get('/productos/{categoria}/{seccion}', 'ProductoController@showSection')->name('seccion');
 
 Route::get('/servicios',  'ServiciosController@directory')->name('servicios');
