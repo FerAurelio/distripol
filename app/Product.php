@@ -11,37 +11,37 @@ class Product extends Model
     
     public function subsection()
     {
-    return $this->belongsTo("App/Subsection", "subsection_id" );
+    return $this->belongsTo(Subsection::class );
     }
 
 
     public function aplication()
     {
-    return $this->belongsTo("App/Aplication", "aplication_id" );
+    return $this->belongsTo(Aplication::class  );
     }
 
 
     public function brand()
     {
-    return $this->belongsTo("App/Brand", "brand_id" );
+    return $this->belongsTo(Brand::class);
     }   
     
 
     public function power()
     {
-    return $this->belongsTo("App/Power", "power_id" );
+    return $this->belongsTo(Power::class  );
     }
 
 
     public function quality()
     {
-    return $this->belongsTo("App/Quality", "quality_id" );
+    return $this->belongsTo(Quality::class);
     }
    
 
     public function segment()
     {
-    return $this->belongsTo("App/Segment", "segment_id" );
+    return $this->belongsTo(Segment::class  );
     }
 
 

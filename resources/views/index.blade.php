@@ -231,6 +231,5 @@ menu responsive
 </div>
 
 
-@include('partials.suscription')
-@include('partials.marcas')
+
 @endsection

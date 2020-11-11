@@ -13,10 +13,12 @@
 </head>
 
 <body>
-  <div>
+
     @include('partials.navbar')
     @yield('content')
-  </div>
+  
+  @include('partials.suscription')
+@include('partials.marcas')
   @include('partials.footer')
 </body>
 </html>

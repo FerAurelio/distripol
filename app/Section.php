@@ -12,7 +12,12 @@ class Section extends Model
 
     public function category()
     {
-    return $this->belongsTo("App/Caterory", "category_id" );
+    return $this->belongsTo(Category::class );
+    }
+
+    public function subsections()
+    {
+    return $this->hasMany(Subsection::class );
     }
 
 }

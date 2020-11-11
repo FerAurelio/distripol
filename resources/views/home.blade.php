@@ -14,6 +14,5 @@
   </section>
   <aside class="asideRight"><img src="img/showroom1.jpg" alt="Nuestro Showroom"></aside>
 </main>
-@include('partials.suscription')
-@include('partials.marcas')
+
 @endsection
