@@ -1,0 +1,169 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Product;
+use App\Subsection;
+use App\Section;
+use App\Brand;
+use App\Power;
+use App\Aplication;
+use App\Quality;
+use App\Segment;
+
+class PisosIndustrialesController extends Controller
+{
+   
+   
+        public function directory(){
+            $productos = Product::all();
+            $subsections= Subsection::all();
+            $sections= Section::all();
+            return view("productos", compact("productos", "subsections","sections"));
+          }
+      
+         
+
+
+   
+  
+  public function listadoCorte (){
+    $sections= Section::where("category_id", "=" , '3')->get();
+    $subsections= Subsection::where("id", "=" , '37')->get();
+    $subsectionC= Subsection::where('section_id','=', '12')->get();
+    $subsectionP= Subsection::where('section_id','=', '13')->get();
+    $subsectionD= Subsection::where('section_id','=', '14')->get();
+    $subsectionAS= Subsection::where('section_id','=', '11')->get();
+   
+    $productos= Product::where("subsection_id", "=" , '12')->get();
+
+    return view('industriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+  }
+ 
+  
+  public function listadoPerforado (){
+    $sections= Section::where("category_id", "=" , '3')->get();
+    $subsections= Subsection::where("id", "=" , '12')->get();
+    $subsectionC= Subsection::where('section_id','=', '1')->get();
+    $subsectionP= Subsection::where('section_id','=', '2')->get();
+    $subsectionD= Subsection::where('section_id','=', '3')->get();
+    $subsectionAS= Subsection::where('section_id','=', '4')->get();
+    $subsectionAE= Subsection::where('section_id','=', '5')->get();
+    $productos= Product::where("subsection_id", "=" , '12')->get();
+
+    return view('industriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+}
+
+  public function listadoPerforado2 (){
+    $sections= Section::where("category_id", "=" , '3')->get();
+    $subsections= Subsection::where("id", "=" , '13')->get();
+    $subsectionC= Subsection::where('section_id','=', '1')->get();
+    $subsectionP= Subsection::where('section_id','=', '2')->get();
+    $subsectionD= Subsection::where('section_id','=', '3')->get();
+    $subsectionAS= Subsection::where('section_id','=', '4')->get();
+    $subsectionAE= Subsection::where('section_id','=', '5')->get();
+    $productos= Product::where("subsection_id", "=" , '13')->get();
+
+    return view('industriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+}
+
+  public function listadoPulido (){
+    $sections= Section::where("category_id", "=" , '3')->get();
+    $subsections= Subsection::where("id", "=" , '14')->get();
+    $subsectionC= Subsection::where('section_id','=', '1')->get();
+    $subsectionP= Subsection::where('section_id','=', '2')->get();
+    $subsectionD= Subsection::where('section_id','=', '3')->get();
+    $subsectionAS= Subsection::where('section_id','=', '4')->get();
+    $subsectionAE= Subsection::where('section_id','=', '5')->get();
+    $productos= Product::where("subsection_id", "=" , '14')->get();
+
+    return view('industriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+}
+
+  public function listadoPulido2 (){
+    $sections= Section::where("category_id", "=" , '2')->get();
+    $subsections= Subsection::where("id", "=" , '15')->get();
+    $subsectionC= Subsection::where('section_id','=', '1')->get();
+    $subsectionP= Subsection::where('section_id','=', '2')->get();
+    $subsectionD= Subsection::where('section_id','=', '3')->get();
+    $subsectionAS= Subsection::where('section_id','=', '4')->get();
+    $subsectionAE= Subsection::where('section_id','=', '5')->get();
+    $productos= Product::where("subsection_id", "=" , '15')->get();
+
+    return view('industriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+}
+
+public function listadoPulido3 (){
+    $sections= Section::where("category_id", "=" , '2')->get();
+    $subsections= Subsection::where("id", "=" , '16')->get();
+    $subsectionC= Subsection::where('section_id','=', '1')->get();
+    $subsectionP= Subsection::where('section_id','=', '2')->get();
+    $subsectionD= Subsection::where('section_id','=', '3')->get();
+    $subsectionAS= Subsection::where('section_id','=', '4')->get();
+    $subsectionAE= Subsection::where('section_id','=', '5')->get();
+    $productos= Product::where("subsection_id", "=" , '16')->get();
+
+    return view('industriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+}
+  public function listadoPulido4 (){
+    $sections= Section::where("category_id", "=" , '2')->get();
+    $subsections= Subsection::where("id", "=" , '17')->get();
+    $subsectionC= Subsection::where('section_id','=', '1')->get();
+    $subsectionP= Subsection::where('section_id','=', '2')->get();
+    $subsectionD= Subsection::where('section_id','=', '3')->get();
+    $subsectionAS= Subsection::where('section_id','=', '4')->get();
+    $subsectionAE= Subsection::where('section_id','=', '5')->get();
+    $productos= Product::where("subsection_id", "=" , '17')->get();
+
+    return view('industriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+}
+
+  public function listadoPulido5 (){
+    $sections= Section::where("category_id", "=" , '2')->get();
+    $subsections= Subsection::where("id", "=" , '18')->get();
+    $subsectionC= Subsection::where('section_id','=', '1')->get();
+    $subsectionP= Subsection::where('section_id','=', '2')->get();
+    $subsectionD= Subsection::where('section_id','=', '3')->get();
+    $subsectionAS= Subsection::where('section_id','=', '4')->get();
+    $subsectionAE= Subsection::where('section_id','=', '5')->get();
+    $productos= Product::where("subsection_id", "=" , '18')->get();
+
+    return view('industriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+}
+
+ 
+public function listadoAdhesivos (){
+    $sections= Section::where("category_id", "=" , '2')->get();
+    $subsections= Subsection::where("id", "=" , '22')->get();
+    $subsectionC= Subsection::where('section_id','=', '1')->get();
+    $subsectionP= Subsection::where('section_id','=', '2')->get();
+    $subsectionD= Subsection::where('section_id','=', '3')->get();
+    $subsectionAS= Subsection::where('section_id','=', '4')->get();
+    $subsectionAE= Subsection::where('section_id','=', '5')->get();
+    $productos= Product::where("subsection_id", "=" , '22')->get();
+    return view('industriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+}
+
+public function listadoAdhesivos2 (){
+    $sections= Section::where("category_id", "=" , '2')->get();
+    $subsections= Subsection::where("id", "=" , '23')->get();
+    $subsectionC= Subsection::where('section_id','=', '1')->get();
+    $subsectionP= Subsection::where('section_id','=', '2')->get();
+    $subsectionD= Subsection::where('section_id','=', '3')->get();
+    $subsectionAS= Subsection::where('section_id','=', '4')->get();
+    $subsectionAE= Subsection::where('section_id','=', '5')->get();
+    $productos= Product::where("subsection_id", "=" , '23')->get();
+    return view('industriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+}
+
+
+
+
+
+
+
+
+
+
+}

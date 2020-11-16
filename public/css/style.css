@@ -24,6 +24,13 @@ body {
     color: rgb(3, 77, 3);
 }
 
+figure{
+    display:flex; 
+    justify-content: center; 
+    align-items:center; 
+    flex-wrap:wrap;     
+}
+
 .nav-item a.dropdown-item:hover {
     font-size: 0.85em;
     padding: 4px 18px;
@@ -49,7 +56,9 @@ main {
     flex-direction: row;
     justify-content: space-around;
 }
-
+.card-body{
+    min-height: 220px;
+}
 .mainCon {
     display: flex;
     flex-direction: row;
@@ -59,13 +68,20 @@ main {
 .menuLeft {
     width: 15%;
     background-color: #d6d6d6;
-    margin-right: 1%;
+    margin-right: 20px;
+}
+
+.menuLeft nav ul {
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
 }
 
 .menuLeft li div {
     background-color: #c2c2c2;
     margin: 5px 0;
-    padding: 5px;
+    width: 100%;
+    font-size: 0.9em;
 }
 
 .menuLeft li div:hover {
@@ -90,6 +106,7 @@ main {
 }
 
 .contenidoProds {
+    min-height: 360px;
     font-weight: 600;
     padding-top: 10px;
     width: 78%;
@@ -606,6 +623,7 @@ h6 {
 
 .card-header {
     text-align: center;
+    font-size:0.9em;
 }
 
 @media (max-width: 1280px) {

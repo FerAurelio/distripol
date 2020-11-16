@@ -10,7 +10,7 @@ class Subsection extends Model
 
     public function section()
     {
-    return $this->belongsTo("App/Section", "section_id" );
+    return $this->belongsTo(Section::class );
     }
     public function productos()
     {

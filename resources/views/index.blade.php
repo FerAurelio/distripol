@@ -43,8 +43,7 @@
             <ul>
                 <li><a href="/construccion/corte">Corte</a></li>
                 <li><a href="/construccion/perforado">Perforado</a></li>
-                <li><a href="/construccion/demolicion">Demolición</a></li>
-                <li><a href="/construccion/adhesivos">Adhesivos y Selladores</a></li>
+                <li><a href="/construccion/demolicion">Demolición</a></li>               
             </ul>
         </div>
         <div id="menuMarmoleria" style="display: none; border-top:7px solid yellowgreen">

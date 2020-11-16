@@ -13,10 +13,10 @@ $navAccess=[
 $secProduct=[
   "Construcción, Obra Civil y Obra Vial" => "/construccion/corte",
   "Marmolería y Piedras Naturales" => "/marmoleria/corte",
-  "Pisos Industriales" => "/industriales/corte",
-  "Gress, Porcelanato y Cerámicas" => "/gress",
-  "Mosaicos, Refractarios y Viguetas" => "/mosaicos",
-  "Máquinas, Equipamientos, Seguridad y Accesorios" => "/maquinas/herramientas",
+  "Pisos Industriales" => "/pisosIndustriales/corte",
+  "Gress, Porcelanato y Cerámicas" => "/gress/corte",
+  "Mosaicos, Refractarios y Viguetas" => "/mosaicos/corte",
+  "Máquinas, Equipamientos, Seguridad y Accesorios" => "/herramientas/amoladoras",
 ];
 
 ?>
@@ -28,7 +28,7 @@ $secProduct=[
    @guest  
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-      <a class="navbar-brand" href="#"><img src="img/logo-distripol-herramientas.png" alt="Distripol Herramientas" ></a>
+      <a class="navbar-brand" href="#"><img src="../img/logo-distripol-herramientas.png" alt="Distripol Herramientas" ></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -75,6 +75,6 @@ $secProduct=[
   </nav>
   </div>  
 </header>
-<div class="textoLogo" ><img class="imgLogo" src="img/Herramientas-e-Insumos-para-Empresas-Constructoras.png" alt="Herramientas e Insumos para Marmolerías y Empresas Constructoras">
-  <div class="textML"> <a href="https://listado.mercadolibre.com.ar/_CustId_228264258">Visite Nuestro E-Shop <img src="img/logo-ML.png" alt="E-shop Mercado Libre"></a></div>
+<div class="textoLogo" ><img class="imgLogo" src="../img/Herramientas-e-Insumos-para-Empresas-Constructoras.png" alt="Herramientas e Insumos para Marmolerías y Empresas Constructoras">
+  <div class="textML"> <a href="https://listado.mercadolibre.com.ar/_CustId_228264258">Visite Nuestro E-Shop <img src="../img/logo-ML.png" alt="E-shop Mercado Libre"></a></div>
 </div>

@@ -44,6 +44,6 @@ class Product extends Model
     return $this->belongsTo(Segment::class  );
     }
 
-
+   
 
 }
