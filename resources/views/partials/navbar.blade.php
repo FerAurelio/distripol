@@ -62,10 +62,19 @@ $secProduct=[
    
        </ul>
 
-       <form class="form-inline my-2 my-lg-0">
-         <input class="form-control mr-sm-2" type="search" placeholder="¿Qué está buscando?" aria-label="Search">
+
+
+
+       
+       
+       
+       <form action="/productos" class="form-inline my-2 my-lg-0" method="POST" >
+       @csrf
+       
+         <input class="form-control mr-sm-2" id="title" name="title" type="text" placeholder="¿Qué está buscando?" aria-label="Search">
          <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
        </form>
+
      </div>
    </nav>
 

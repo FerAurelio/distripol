@@ -16,20 +16,31 @@ class ProductoController extends Controller
 {
    
    
-        public function directory(){
-            $productos = Product::all();
-            $subsections= Subsection::all();
-            $sections= Section::all();
-            return view("productos", compact("productos", "subsections","sections"));
-          }
+ public function directory()
+  {
+    $productos = Product::all();
+    $subsections= Subsection::all();
+    $sections= Section::all();
+    return view("productos", compact("productos", "subsections","sections"));
+  }
       
-         
+  public function busqueda(Request $request)
+  {
+  
+    $productos = Product::where('title', 'like', "%$request->title%")->get();
+
+    return view('productos', compact('productos'));
+
+  }
 
 
-      public function show ($id){
-      
+ public function show ($id)
+  {      
 	  $producto = Product::find($id);
 		return view('productos', compact('producto'));
   }
-
+  function dd()
+{
+    array_map(function($x) { var_dump($x); }, func_get_args()); die;
+}
 }

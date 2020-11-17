@@ -14,37 +14,38 @@ para ser asesorado correctamente:
     <section class="sectionCon">
         <h1>CONTACTO</h1>
         <div>
-            <form>
+            <form id="contact-form" name="contact-form" method="POST" action="/contacto/enviado">
+            @csrf
                 <div class="row justify-content-center">
 
                     <div class="col-md-8">
                         <div class="form-group">
                             <label>Nombre*</label>
-                            <input type="name" class="form-control" id="name" placeholder="Escriba su nombre" required>
+                            <input type="name" class="form-control" id="name" name="name" placeholder="Escriba su nombre" required>
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="form-group">
                             <label>Teléfono*</label>
-                            <input type="phone" class="form-control" id="phone" placeholder="Escriba su número telefónico" required>
+                            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Escriba su número telefónico" required>
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="form-group">
                             <label>Empresa</label>
-                            <input type="empresa" class="form-control" id="empresa" placeholder="Escriba el nombre de su empresa">
+                            <input type="empresa" class="form-control" id="empresa" name="empresa" placeholder="Escriba el nombre de su empresa">
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="form-group">
                             <label>E-mail*</label>
-                            <input type="email" class="form-control" id="email" placeholder="Escriba su e-mail" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Escriba su e-mail" required>
                         </div>
                     </div>
                     <div class="col-md-8">
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Consulta*</label>
-                            <textarea class="form-control" id="consulta" placeholder="Escriba su consulta..." rows="3" required></textarea>
+                            <textarea class="form-control" id="consulta" name="consulta" placeholder="Escriba su consulta..." rows="3" required></textarea>
                         </div>
                     </div>
                     <div class="col-md-8">

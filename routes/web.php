@@ -24,9 +24,11 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@directory')->name('home');
 
+
 Route::get('/',  'IndexController@index')->name('inicio');
 
-Route::get('/productos', 'ProductoController@directory')->name('productos');
+Route::get('/productos', 'ProductoController@busqueda')->name('busqueda');
+Route::post('/productos', 'ProductoController@busqueda')->name('busquedaP');
 
 Route::get("/productos/{id}", "ProductoController@show");
 
@@ -95,5 +97,6 @@ Route::get('/seguridad/fajas', 'SeguridadController@listadoFajas')->name('seccio
 Route::get('/servicios',  'ServiciosController@directory')->name('servicios');
 
 Route::get('/contacto',  'ContactoController@directory')->name('contacto');
+Route::post('/contacto/enviado',  'ContactoController@enviar2')->name('contactof');
 
 Route::get('/cotizar',  'CotizarController@directory')->name('cotizar');
