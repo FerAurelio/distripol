@@ -5,6 +5,16 @@
 @include('partials.cortarP')
 <main class="containerP">
 <aside class="menuLeft">
+
+
+<div class="p-2" style="border-top: 7px solid #ff931e;background-color:#006837;color:white" >
+        
+            
+Pisos Industriales
+        
+    </div>
+
+
         <nav>
             <ul ><b>CORTE</b>
            

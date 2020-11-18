@@ -5,6 +5,12 @@
 @include('partials.cortarP')
 <main class="containerP">
 <aside class="menuLeft">
+<div class="p-2" style="border-top: 7px solid #ed1e79;background-color:#006837;color:white" >
+        
+            
+        Máquinas, Equipamiento, Seguridad y Accesorios
+                
+</div>
         <nav>
             <ul ><b>Máquinas y Equipamiento</b>
            

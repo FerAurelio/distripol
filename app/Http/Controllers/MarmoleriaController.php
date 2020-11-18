@@ -38,7 +38,7 @@ class MarmoleriaController extends Controller
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '9')->get();
 
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
   }
   public function listadoCorte2 (){
     $sections= Section::where("category_id", "=" , '2')->get();
@@ -50,7 +50,7 @@ class MarmoleriaController extends Controller
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '10')->get();
 
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
  }
   public function listadoCorte3 (){
     $sections= Section::where("category_id", "=" , '2')->get();
@@ -62,7 +62,7 @@ class MarmoleriaController extends Controller
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '11')->get();
 
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
   
   public function listadoPerforado (){
@@ -75,7 +75,7 @@ class MarmoleriaController extends Controller
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '12')->get();
 
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
   public function listadoPerforado2 (){
@@ -88,7 +88,7 @@ class MarmoleriaController extends Controller
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '13')->get();
 
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
   public function listadoDesbaste (){
@@ -101,7 +101,7 @@ class MarmoleriaController extends Controller
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '14')->get();
 
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
   public function listadoDesbaste2 (){
@@ -114,7 +114,7 @@ class MarmoleriaController extends Controller
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '15')->get();
 
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
 public function listadoDesbaste3 (){
@@ -127,7 +127,7 @@ public function listadoDesbaste3 (){
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '16')->get();
 
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
   public function listadoDesbaste4 (){
     $sections= Section::where("category_id", "=" , '2')->get();
@@ -139,7 +139,7 @@ public function listadoDesbaste3 (){
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '17')->get();
 
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
   public function listadoDesbaste5 (){
@@ -152,7 +152,7 @@ public function listadoDesbaste3 (){
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '18')->get();
 
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
   public function listadoDesbaste6 (){
@@ -165,7 +165,7 @@ public function listadoDesbaste3 (){
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '19')->get();
 
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
   public function listadoDesbaste7 (){
@@ -178,7 +178,7 @@ public function listadoDesbaste3 (){
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '20')->get();
 
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
   public function listadoDesbaste8 (){
@@ -190,7 +190,7 @@ public function listadoDesbaste3 (){
     $subsectionAS= Subsection::where('section_id','=', '4')->get();
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '33')->get();
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
 public function listadoDesbaste9 (){
@@ -202,7 +202,7 @@ public function listadoDesbaste9 (){
     $subsectionAS= Subsection::where('section_id','=', '4')->get();
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '48')->get();
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
 public function listadoAdhesivos (){
@@ -214,7 +214,7 @@ public function listadoAdhesivos (){
     $subsectionAS= Subsection::where('section_id','=', '4')->get();
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '22')->get();
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
 public function listadoAdhesivos2 (){
@@ -226,7 +226,7 @@ public function listadoAdhesivos2 (){
     $subsectionAS= Subsection::where('section_id','=', '4')->get();
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '23')->get();
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
 public function listadoEquipos (){
@@ -238,7 +238,7 @@ public function listadoEquipos (){
     $subsectionAS= Subsection::where('section_id','=', '4')->get();
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '24')->get();
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 public function listadoAccesorios (){
     $sections= Section::where("category_id", "=" , '2')->get();
@@ -249,7 +249,7 @@ public function listadoAccesorios (){
     $subsectionAS= Subsection::where('section_id','=', '4')->get();
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
     $productos= Product::where("subsection_id", "=" , '25')->get();
-    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections',));
+    return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
 

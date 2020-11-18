@@ -35,7 +35,7 @@ class SeguridadController extends Controller
     $subsectionS= Subsection::where('section_id','=', '7')->get();
     $productos= Product::where("subsection_id", "=" , '42')->get();
 
-    return view('seguridad', compact('subsections','subsectionC','subsectionS', 'productos','sections',));
+    return view('seguridad', compact('subsections','subsectionC','subsectionS', 'productos','sections'));
   }
 
   public function listadoRespiratoria (){
@@ -45,7 +45,7 @@ class SeguridadController extends Controller
     $subsectionS= Subsection::where('section_id','=', '7')->get();
     $productos= Product::where("subsection_id", "=" , '43')->get();
 
-    return view('seguridad', compact('subsections','subsectionC','subsectionS', 'productos','sections',));
+    return view('seguridad', compact('subsections','subsectionC','subsectionS', 'productos','sections'));
   }
 
   public function listadoAuditiva(){
@@ -55,7 +55,7 @@ class SeguridadController extends Controller
     $subsectionS= Subsection::where('section_id','=', '7')->get();
     $productos= Product::where("subsection_id", "=" , '44')->get();
 
-    return view('seguridad', compact('subsections','subsectionC','subsectionS', 'productos','sections',));
+    return view('seguridad', compact('subsections','subsectionC','subsectionS', 'productos','sections'));
   }
 
   public function listadoFacial (){
@@ -65,7 +65,7 @@ class SeguridadController extends Controller
     $subsectionS= Subsection::where('section_id','=', '7')->get();
     $productos= Product::where("subsection_id", "=" , '45')->get();
 
-    return view('seguridad', compact('subsections','subsectionC','subsectionS', 'productos','sections',));
+    return view('seguridad', compact('subsections','subsectionC','subsectionS', 'productos','sections'));
   }
 
 public function listadoFajas (){
@@ -75,7 +75,7 @@ public function listadoFajas (){
     $subsectionS= Subsection::where('section_id','=', '7')->get();
     $productos= Product::where("subsection_id", "=" , '46')->get();
 
-    return view('seguridad', compact('subsections','subsectionC','subsectionS', 'productos','sections',));
+    return view('seguridad', compact('subsections','subsectionC','subsectionS', 'productos','sections'));
   }
 
  

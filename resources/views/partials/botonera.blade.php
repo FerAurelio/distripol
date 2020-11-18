@@ -41,7 +41,7 @@
    
 <!--
 menu responsive
--->
+
 <div class="menu-collapse ">
 
 
@@ -76,7 +76,7 @@ menu responsive
     <div class="fdoCon" style="border-top: 7px solid #7ac943;" id="btn-marmoleria">
         <a class="btn-secundario  collapsed p-2 " href="#collapseTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
             
-            Marmolería y Piedras Industriales
+            Marmolería y Piedras Naturales
         </a>
 
     </div>
@@ -108,13 +108,13 @@ menu responsive
     <div id="collapseThree" class="collapse" aria-labelledby="btn-industriales" data-parent="#accordionExample">
         <div class="card card-body fdoMenuColl">
             <ul>
-                <li><a class="MenColl" href="/pisos/corte">Corte</a></li>
+                <li><a class="MenColl" href="/pisosIndustriales/corte">Corte</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="MenColl" href="/pisos/perforado">Perforado</a></li>
+                <li><a class="MenColl" href="/pisosIndustriales/perforado">Perforado</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="MenColl" href="/pisos/pulido">Pulido</a></li>
+                <li><a class="MenColl" href="/pisosIndustriales/pulido">Pulido</a></li>
                 <div class="dropdown-divider"></div>
-                <li><a class="MenColl" href="/pisos/adhesivos">Adhesivos y Selladores</a></li>
+                <li><a class="MenColl" href="/pisosIndustriales/adhesivos">Adhesivos y Selladores</a></li>
             </ul>
         </div>
     </div>
@@ -165,7 +165,7 @@ menu responsive
         </div>
     </div>
 </div>
-
+-->
 
 </div>
 </section>

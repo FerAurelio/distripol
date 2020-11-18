@@ -5,6 +5,12 @@
 @include('partials.cortarP')
 <main class="containerP">
 <aside class="menuLeft">
+<div class="p-2" style="border-top: 7px solid #7ac943; background-color:#006837;color:white" >
+        
+            
+        Marmolería y Piedras Naturales
+                
+            </div
         <nav>
             <ul ><b>CORTE</b>
            

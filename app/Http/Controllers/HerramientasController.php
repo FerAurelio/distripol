@@ -35,7 +35,7 @@ class HerramientasController extends Controller
     $subsectionS= Subsection::where('section_id','=', '7')->get();
     $productos= Product::where("subsection_id", "=" , '26')->get();
 
-    return view('herramientas', compact('subsections','subsectionC','subsectionS', 'productos','sections',));
+    return view('herramientas', compact('subsections','subsectionC','subsectionS', 'productos','sections'));
   }
 
   public function listadoAserradoras (){
@@ -45,7 +45,7 @@ class HerramientasController extends Controller
     $subsectionS= Subsection::where('section_id','=', '7')->get();
     $productos= Product::where("subsection_id", "=" , '27')->get();
 
-    return view('herramientas', compact('subsections','subsectionC','subsectionS', 'productos','sections',));
+    return view('herramientas', compact('subsections','subsectionC','subsectionS', 'productos','sections'));
   }
 
   public function listadoPulidoras (){
@@ -55,7 +55,7 @@ class HerramientasController extends Controller
     $subsectionS= Subsection::where('section_id','=', '7')->get();
     $productos= Product::where("subsection_id", "=" , '28')->get();
 
-    return view('herramientas', compact('subsections','subsectionC','subsectionS', 'productos','sections',));
+    return view('herramientas', compact('subsections','subsectionC','subsectionS', 'productos','sections'));
   }
 
   public function listadoMartillos (){
@@ -65,7 +65,7 @@ class HerramientasController extends Controller
     $subsectionS= Subsection::where('section_id','=', '7')->get();
     $productos= Product::where("subsection_id", "=" , '29')->get();
 
-    return view('herramientas', compact('subsections','subsectionC','subsectionS', 'productos','sections',));
+    return view('herramientas', compact('subsections','subsectionC','subsectionS', 'productos','sections'));
   }
 
 public function listadoTaladrosEB (){
@@ -75,7 +75,7 @@ public function listadoTaladrosEB (){
     $subsectionS= Subsection::where('section_id','=', '7')->get();
     $productos= Product::where("subsection_id", "=" , '30')->get();
 
-    return view('herramientas', compact('subsections','subsectionC','subsectionS', 'productos','sections',));
+    return view('herramientas', compact('subsections','subsectionC','subsectionS', 'productos','sections'));
   }
 
   public function listadoTaladrosC (){
@@ -85,7 +85,7 @@ public function listadoTaladrosEB (){
     $subsectionS= Subsection::where('section_id','=', '7')->get();
     $productos= Product::where("subsection_id", "=" , '31')->get();
 
-    return view('herramientas', compact('subsections','subsectionC','subsectionS', 'productos','sections',));
+    return view('herramientas', compact('subsections','subsectionC','subsectionS', 'productos','sections'));
   }
 
 

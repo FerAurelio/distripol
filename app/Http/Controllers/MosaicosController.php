@@ -36,7 +36,7 @@ class MosaicosController extends Controller
    
     $productos= Product::where("subsection_id", "=" , '36')->get();
 
-    return view('gress', compact('subsections','subsectionC', 'productos','sections',));
+    return view('gress', compact('subsections','subsectionC', 'productos','sections'));
   }
  
 

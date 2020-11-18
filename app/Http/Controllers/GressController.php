@@ -36,7 +36,7 @@ class GressController extends Controller
    
     $productos= Product::where("subsection_id", "=" , '34')->get();
 
-    return view('mosaicos', compact('subsections','subsectionC', 'productos','sections',));
+    return view('mosaicos', compact('subsections','subsectionC', 'productos','sections'));
   }
   public function listadoCorte2 (){
     $sections= Section::where("category_id", "=" , '4')->get();
@@ -46,7 +46,7 @@ class GressController extends Controller
    
     $productos= Product::where("subsection_id", "=" , '35')->get();
 
-    return view('mosaicos', compact('subsections','subsectionC', 'productos','sections',));
+    return view('mosaicos', compact('subsections','subsectionC', 'productos','sections'));
   }
 
 
