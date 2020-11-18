@@ -1,18 +1,18 @@
 @extends('layouts.master')
-@section('pageTitle',"Máquinas, Equipamiento, Seguridad y Accesorios")
+@section('pageTitle',"Gress, Porcelanato y Cerámicas")
 @section('content')
 @include('partials.botonera')
 @include('partials.cortarP')
 <main class="containerP">
 <aside class="menuLeft">
-<div class="p-2" style="border-top: 7px solid #ed1e79;background-color:#006837;color:white" >
+<div class="p-2" style="border-top: 7px solid #ff0000;background-color:#006837;color:white" >
         
             
-        Máquinas, Equipamiento, Seguridad y Accesorios
-                
-            </div>
+Gress, Porcelanato y Cerámicas
+    
+</div>
         <nav>
-            <ul ><b>Máquinas y Equipamiento</b>
+            <ul ><b>CORTE</b>
            
        
             @foreach($subsectionC as $subsectionCo)
@@ -24,21 +24,6 @@
                     </a>
                 </li>
             @endforeach
-
-
-            <ul ><b>Seguridad y Accesorios</b>
-           
-       
-            @foreach($subsectionS as $subsectionSe)
-                      
-                <li>
-                    <a href="{{$subsectionSe->links}}">
-                        <div>
-                            {{$subsectionSe->title}}</div>
-                    </a>
-                </li>
-            @endforeach
-
 
   </ul>
  
@@ -60,7 +45,7 @@
     <div class="centrarProductos">
        <div class="center">
       
-       @foreach ($productos as $producto)
+       
        
       
         <article class="card bg-light m-3 " >
@@ -74,14 +59,18 @@
                  <img src= "data:image/jpeg;base64,{{base64_encode( $producto->brand->photo )}}" alt="{{$producto->brand->title}}" class="mt-1">
                  @endif
                 </figure>
-                <h6>{{cortarPalabras($producto->characterist)}}</h6>
+                <h6>@if ($producto->aplication_id != NULL)
+                    {{cortarPalabras($producto->aplication->description)}}
+                    @elseif($producto->aplication_id === NULL)
+                    {{cortarPalabras($producto->characterist)}}
+                @endif</h6>
             </div>
-            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/herramientas-detalle/{{$producto->id}}'" id="detalle">Detalle</button>
+            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/gress-detalle/{{$producto->id}}'" id="detalle">Detalle</button>
                 <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
             
         </article>
        
-        @endforeach
+       
         </div>
         </div>
     </section>

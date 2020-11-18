@@ -113,9 +113,14 @@
                  <img src= "data:image/jpeg;base64,{{base64_encode( $producto->brand->photo )}}" alt="{{$producto->brand->title}}" class="mt-1">
                  @endif
                 </figure>
-                <h6>{{cortarPalabras($producto->characterist)}}</h6>
+                <h6>@if ($producto->aplication_id != NULL)
+                    {{cortarPalabras($producto->aplication->description)}}
+                    @elseif($producto->aplication_id === NULL)
+                    {{cortarPalabras($producto->characterist)}}
+                @endif
+                </h6>
             </div>
-            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/productos/{{$producto->id}}'" id="detalle">Detalle</button>
+            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/marmoleria-detalle/{{$producto->id}}'" id="detalle">Detalle</button>
                 <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
             
         </article>

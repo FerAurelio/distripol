@@ -253,7 +253,18 @@ public function listadoAccesorios (){
 }
 
 
-
+public function show ($id)
+  {      
+    $producto = Product::find($id);
+    $sections= Section::where("category_id", "=" , '2')->get();
+    $subsections= Subsection::where("id", "=" , '25')->get();
+    $subsectionC= Subsection::where('section_id','=', '1')->get();
+    $subsectionP= Subsection::where('section_id','=', '2')->get();
+    $subsectionD= Subsection::where('section_id','=', '3')->get();
+    $subsectionAS= Subsection::where('section_id','=', '4')->get();
+    $subsectionAE= Subsection::where('section_id','=', '5')->get();
+		return view('marmoleria-detalle', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','producto','sections'));
+  }
 
 
 

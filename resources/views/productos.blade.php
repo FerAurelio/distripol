@@ -25,13 +25,93 @@
                 </figure>
                 <h6>{{cortarPalabras($producto->characterist)}}</h6>
             </div>
-            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/productos/{{$producto->id}}'" id="detalle">Detalle</button>
+            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/productos/detalle/{{$producto->id}}'" id="detalle">Detalle</button>
                 <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
             
         </article>
       
        
         @endforeach
+
+
+        @foreach ($productosC as $productoC) 
+      
+      <article class="card bg-light m-3 " >
+           <div class="card-header">{{$productoC->title}}</div>
+           
+           <div class="card-body">
+               <figure style="display:flex; justify-content: center; align-items:flex-end; flex-wrap:wrap" > 
+               <img src=  "data:image/jpeg;base64,{{base64_encode( $productoC->image_1 )}}" style="max-width:100%" alt="{{$productoC->title}}">
+                @if ($productoC->brand_id != NULL)
+                <br>
+                <img src= "data:image/jpeg;base64,{{base64_encode( $productoC->brand->photo )}}" alt="{{$productoC->brand->title}}" class="mt-1">
+                @endif
+               </figure>
+               <h6>{{cortarPalabras($productoC->characterist)}}</h6>
+           </div>
+           <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/productos/detalle/{{$productoC->id}}'" id="detalle">Detalle</button>
+               <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
+           
+       </article>
+     
+      
+       @endforeach
+
+
+
+       @foreach ($productosA as $productoA) 
+      
+      <article class="card bg-light m-3 " >
+           <div class="card-header">{{$productoA->title}}</div>
+           
+           <div class="card-body">
+               <figure style="display:flex; justify-content: center; align-items:flex-end; flex-wrap:wrap" > 
+               <img src=  "data:image/jpeg;base64,{{base64_encode( $productoA->image_1 )}}" style="max-width:100%" alt="{{$productoA->title}}">
+                @if ($productoA->brand_id != NULL)
+                <br>
+                <img src= "data:image/jpeg;base64,{{base64_encode( $productoA->brand->photo )}}" alt="{{$productoA->brand->title}}" class="mt-1">
+                @endif
+               </figure>
+               <h6>{{cortarPalabras($productoA->characterist)}}</h6>
+           </div>
+           <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/productos/detalle/{{$productoA->id}}'" id="detalle">Detalle</button>
+               <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
+           
+       </article>
+     
+      
+       @endforeach
+
+
+
+       @foreach ($productosB as $productoB) 
+      
+      <article class="card bg-light m-3 " >
+           <div class="card-header">{{$productoB->title}}</div>
+           
+           <div class="card-body">
+               <figure style="display:flex; justify-content: center; align-items:flex-end; flex-wrap:wrap" > 
+               <img src=  "data:image/jpeg;base64,{{base64_encode( $productoB->image_1 )}}" style="max-width:100%" alt="{{$productoB->title}}">
+                @if ($productoB->brand_id != NULL)
+                <br>
+                <img src= "data:image/jpeg;base64,{{base64_encode( $productoB->brand->photo )}}" alt="{{$productoB->brand->title}}" class="mt-1">
+                @endif
+               </figure>
+               <h6>{{cortarPalabras($productoB->characterist)}}</h6>
+           </div>
+           <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/productos/detalle/{{$productoB->id}}'" id="detalle">Detalle</button>
+               <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
+           
+       </article>
+     
+      
+       @endforeach
+
+
+
+
+
+
         </div>
         </div>
     </section>

@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::post('/', function () {
+    return view('index');
+});
+
 
 Route::get('/', function () {
     return view('/layouts/master');
@@ -30,7 +34,13 @@ Route::get('/',  'IndexController@index')->name('inicio');
 Route::get('/productos', 'ProductoController@busqueda')->name('busqueda');
 Route::post('/productos', 'ProductoController@busqueda')->name('busquedaP');
 
-Route::get("/productos/{id}", "ProductoController@show");
+Route::get("/construccion-detalle/{id}", "ConstruccionController@show");
+Route::get("/marmoleria-detalle/{id}", "MarmoleriaController@show");
+Route::get("/pisosIndustriales-detalle/{id}", "PisosIndustrialesController@show");
+Route::get("/gress-detalle/{id}", "GressController@show");
+Route::get("/mosaicos-detalle/{id}", "MosaicosController@show");
+Route::get("/herramientas-detalle/{id}", "HerramientasController@show");
+Route::get("/seguridad-detalle/{id}", "SerguridadController@show");
 
 //construccion
 Route::get('/construccion/corte', 'ConstruccionController@listadoCorte')->name('seccionConstCorte');

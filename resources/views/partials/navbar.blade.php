@@ -71,7 +71,14 @@ $secProduct=[
        <form action="/productos" class="form-inline my-2 my-lg-0" method="POST" >
        @csrf
        
-         <input class="form-control mr-sm-2" id="title" name="title" type="text" placeholder="¿Qué está buscando?" aria-label="Search">
+         <input class="form-control mr-sm-2"   id="title"  name="title" type="text" placeholder="¿Qué está buscando?" aria-label="Search">
+         <!--<label for="title"></label>
+        <input type="checkbox" name="title" id="title" value="title"> por nombre  
+         <label for="characterist"></label>       
+         <input type="checkbox" name="characterist" id="characterist" value="characterist"> por características
+         <label for="aplication"></label>
+         <input type="checkbox" name="aplication" id="aplication" value="aplication"> por aplicación
+-->
          <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
        </form>
 

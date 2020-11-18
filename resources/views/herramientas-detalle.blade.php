@@ -60,7 +60,7 @@
     <div class="centrarProductos">
        <div class="center">
       
-       @foreach ($productos as $producto)
+       
        
       
         <article class="card bg-light m-3 " >
@@ -81,7 +81,7 @@
             
         </article>
        
-        @endforeach
+        
         </div>
         </div>
     </section>

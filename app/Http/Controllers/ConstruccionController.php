@@ -28,8 +28,13 @@ class ConstruccionController extends Controller
 
       public function show ($id){
       
-	  $producto = Product::find($id);
-		return view('producto-show', compact('producto'));
+    $producto = Product::find($id);
+    $sections= Section::where("category_id", "=" , '1')->get();
+    $subsections= Subsection::where("id", "=" , '1')->get();
+    $subsectionC= Subsection::where('section_id','=', '8')->get();
+    $subsectionP= Subsection::where('section_id','=', '9')->get();
+    $subsectionD= Subsection::where('section_id','=', '10')->get();
+		return view('construccion-detalle', compact('subsections','subsectionC','subsectionP','subsectionD','producto','sections'));
   }
   
   public function listadoCorte (){

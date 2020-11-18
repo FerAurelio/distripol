@@ -78,7 +78,15 @@ public function listadoFajas (){
     return view('seguridad', compact('subsections','subsectionC','subsectionS', 'productos','sections'));
   }
 
- 
+  public function show ($id)
+  {      
+    $producto = Product::find($id);
+    $sections= Section::where("category_id", "=" , '6')->get();
+    $subsections= Subsection::where("id", "=" , '46')->get();
+    $subsectionC= Subsection::where('section_id','=', '6')->get();
+    $subsectionS= Subsection::where('section_id','=', '7')->get();
+		return view('seguridad-detalle', compact('subsections','subsectionC','subsectionS', 'producto','sections'));
+  }
 
 
 

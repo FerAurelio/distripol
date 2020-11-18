@@ -14,7 +14,7 @@ para ser asesorado correctamente:
     <section class="sectionCon">
         <h1>CONTACTO</h1>
         <div>
-            <form id="contact-form" name="contact-form" method="POST" action="/contacto/enviado">
+            <form id="contact-form" name="contact-form" method="POST" action="/">
             @csrf
                 <div class="row justify-content-center">
 

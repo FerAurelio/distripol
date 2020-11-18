@@ -136,7 +136,18 @@ public function listadoAdhesivos2 (){
 }
 
 
-
+public function show ($id)
+  {      
+    $producto = Product::find($id);
+    $sections= Section::where("category_id", "=" , '3')->get();
+    $subsections= Subsection::where("id", "=" , '8')->get();
+    $subsectionC= Subsection::where('section_id','=', '12')->get();
+    $subsectionP= Subsection::where('section_id','=', '13')->get();
+    $subsectionD= Subsection::where('section_id','=', '14')->get();
+    $subsectionAS= Subsection::where('section_id','=', '11')->get();
+    
+		return view('pisosIndustriales-detalle', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','producto','sections',));
+  }
 
 
 

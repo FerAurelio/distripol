@@ -26,21 +26,20 @@ class ProductoController extends Controller
       
   public function busqueda(Request $request)
   {
-  
-    $productos = Product::where('title', 'like', "%$request->title%")->get();
+    $productos = Product::where( 'title', 'like', "%$request->title%")->get();
+    $productosC = Product::where( 'characterist', 'like', "%$request->title%")->get();
+    $productosA= Product::join('aplications', 'aplications.id', '=', 'products.aplication_id' )
+    ->select('products.id','products.title','products.characterist','products.image_1','products.brand_id','products.aplication_id')
+    ->where('aplications.description','like', "%$request->title%")->get();
+    $productosB= Product::join('brands', 'brands.id', '=', 'products.brand_id' )
+    ->select('products.id','products.title','products.characterist','products.image_1','products.brand_id')
+    ->where('brands.title','like', "%$request->title%")->get();
 
-    return view('productos', compact('productos'));
+    return view('productos', compact('productos','productosC','productosA','productosB' ));
 
   }
 
 
- public function show ($id)
-  {      
-	  $producto = Product::find($id);
-		return view('productos', compact('producto'));
-  }
-  function dd()
-{
-    array_map(function($x) { var_dump($x); }, func_get_args()); die;
-}
+ 
+ 
 }

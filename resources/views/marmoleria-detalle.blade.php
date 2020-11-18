@@ -1,26 +1,21 @@
 @extends('layouts.master')
-@section('pageTitle',"Construccion")
+@section('pageTitle',"Marmoleria")
 @section('content')
 @include('partials.botonera')
 @include('partials.cortarP')
 <main class="containerP">
 <aside class="menuLeft">
-
-<div class="p-2" style="border-top: 7px solid #fcee21;background-color:#006837;color:white" >
+<div class="p-2" style="border-top: 7px solid #7ac943; background-color:#006837;color:white" >
         
             
-            Construcción, Obra Civil y Obra Vial
-        
-    </div>
-  <nav>
-  
-<ul> 
-            
-           <b>CORTE</b>
-            
-            
-     
-             @foreach($subsectionC as $subsectionCo)
+        Marmolería y Piedras Naturales
+                
+            </div
+        <nav>
+            <ul ><b>CORTE</b>
+           
+       
+            @foreach($subsectionC as $subsectionCo)
                       
                 <li>
                     <a href="{{$subsectionCo->links}}">
@@ -29,11 +24,9 @@
                     </a>
                 </li>
             @endforeach
-            
-           </ul>
-          
 
-           <ul ><b>PERFORADO</b>
+  </ul>
+  <ul ><b>PERFORADO</b>
            
        
                       @foreach($subsectionP as $subsectionPe)
@@ -46,8 +39,8 @@
                 </li>
               @endforeach
 
-               </ul>
-  <ul ><b>DEMOLICION</b>
+  </ul>
+  <ul ><b>DESBASTE / PULIDO / LUSTRADO</b>
            
        
                       @foreach($subsectionD as $subsectionDe)
@@ -61,8 +54,36 @@
               @endforeach
 
   </ul>
-</div>
-</div>
+  <ul ><b>ADHESIVOS Y SELLADORES</b>
+           
+       
+           @foreach($subsectionAS as $subsectionAse)
+           
+     <li>
+         <a href="{{$subsectionAse->links}}">
+             <div>
+                 {{$subsectionAse->title}}</div>
+         </a>
+     </li>
+   @endforeach
+
+</ul>
+<ul ><b>ACCESORIOS Y EQUIPOS</b>
+           
+       
+           @foreach($subsectionAE as $subsectionAeq)
+           
+     <li>
+         <a href="{{$subsectionAeq->links}}">
+             <div>
+                 {{$subsectionAeq->title}}</div>
+         </a>
+     </li>
+   @endforeach
+
+</ul>
+        </nav>
+
     </aside>
 
     
@@ -78,14 +99,14 @@
     <div class="centrarProductos">
        <div class="center">
       
-       @foreach ($productos as $producto)
+      
        
       
         <article class="card bg-light m-3 " >
             <div class="card-header">{{$producto->title}}</div>
             
             <div class="card-body">
-                <figure> 
+                <figure style="display:flex; justify-content: center; align-items:flex-end; flex-wrap:wrap" > 
                 <img src=  "data:image/jpeg;base64,{{base64_encode( $producto->image_1 )}}" style="max-width:100%" alt="{{$producto->title}}">
                  @if ($producto->brand_id != NULL)
                  <br>
@@ -96,14 +117,15 @@
                     {{cortarPalabras($producto->aplication->description)}}
                     @elseif($producto->aplication_id === NULL)
                     {{cortarPalabras($producto->characterist)}}
-                @endif</h6>
+                @endif
+                </h6>
             </div>
-            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success"  onclick= "location.href = '/construccion-detalle/{{$producto->id}}'" id="detalle">Detalle</button>
+            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/marmoleria-detalle/{{$producto->id}}'" id="detalle">Detalle</button>
                 <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
             
         </article>
        
-        @endforeach
+      
         </div>
         </div>
     </section>

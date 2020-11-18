@@ -119,7 +119,7 @@ Pisos Industriales
                 </figure>
                 <h6>{{cortarPalabras($producto->characterist)}}</h6>
             </div>
-            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/productos/{{$producto->id}}'" id="detalle">Detalle</button>
+            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/productos/detalle/{{$producto->id}}'" id="detalle">Detalle</button>
                 <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
             
         </article>

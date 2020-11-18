@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('pageTitle',"Marmoleria")
+@section('pageTitle',"Máquinas, Equipamiento, Seguridad y Accesorios")
 @section('content')
 @include('partials.botonera')
 @include('partials.cortarP')

@@ -1,18 +1,18 @@
 @extends('layouts.master')
-@section('pageTitle',"Máquinas, Equipamiento, Seguridad y Accesorios")
+@section('pageTitle',"Marmoleria")
 @section('content')
 @include('partials.botonera')
 @include('partials.cortarP')
 <main class="containerP">
 <aside class="menuLeft">
-<div class="p-2" style="border-top: 7px solid #ed1e79;background-color:#006837;color:white" >
+<div class="p-2" style="border-top: 7px solid #ff931e;background-color:#006837;color:white" >
         
             
-        Máquinas, Equipamiento, Seguridad y Accesorios
+        Pisos Industriales
                 
             </div>
         <nav>
-            <ul ><b>Máquinas y Equipamiento</b>
+            <ul ><b>CORTE</b>
            
        
             @foreach($subsectionC as $subsectionCo)
@@ -25,23 +25,49 @@
                 </li>
             @endforeach
 
-
-            <ul ><b>Seguridad y Accesorios</b>
+  </ul>
+  <ul ><b>PERFORADO</b>
            
        
-            @foreach($subsectionS as $subsectionSe)
+                      @foreach($subsectionP as $subsectionPe)
                       
                 <li>
-                    <a href="{{$subsectionSe->links}}">
+                    <a href="{{$subsectionPe->links}}">
                         <div>
-                            {{$subsectionSe->title}}</div>
+                            {{$subsectionPe->title}}</div>
                     </a>
                 </li>
-            @endforeach
-
+              @endforeach
 
   </ul>
- 
+  <ul ><b>PULIDO</b>
+           
+       
+                      @foreach($subsectionD as $subsectionDe)
+                      
+                <li>
+                    <a href="{{$subsectionDe->links}}">
+                        <div>
+                            {{$subsectionDe->title}}</div>
+                    </a>
+                </li>
+              @endforeach
+
+  </ul>
+  <ul ><b>ADHESIVOS</b>
+           
+       
+           @foreach($subsectionAS as $subsectionAse)
+           
+     <li>
+         <a href="{{$subsectionAse->links}}">
+             <div>
+                 {{$subsectionAse->title}}</div>
+         </a>
+     </li>
+   @endforeach
+
+</ul>
 
         </nav>
 
@@ -60,7 +86,7 @@
     <div class="centrarProductos">
        <div class="center">
       
-       @foreach ($productos as $producto)
+       
        
       
         <article class="card bg-light m-3 " >
@@ -74,14 +100,18 @@
                  <img src= "data:image/jpeg;base64,{{base64_encode( $producto->brand->photo )}}" alt="{{$producto->brand->title}}" class="mt-1">
                  @endif
                 </figure>
-                <h6>{{cortarPalabras($producto->characterist)}}</h6>
+                <h6>@if ($producto->aplication_id != NULL)
+                    {{cortarPalabras($producto->aplication->description)}}
+                    @elseif($producto->aplication_id === NULL)
+                    {{cortarPalabras($producto->characterist)}}
+                @endif</h6>
             </div>
-            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/herramientas-detalle/{{$producto->id}}'" id="detalle">Detalle</button>
+            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/gress-detalle/{{$producto->id}}'" id="detalle">Detalle</button>
                 <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
             
         </article>
        
-        @endforeach
+        
         </div>
         </div>
     </section>

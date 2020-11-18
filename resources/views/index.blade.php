@@ -20,12 +20,12 @@
                             <h2>Pisos Industriales</h2>
                         </div>
                     </a></li>
-                <li><a href="/gress" onclick="gress()">
+                <li><a href="/gress/corte" onclick="gress()">
                         <div id="link4">
                             <h2>Gress, Porcelanato<br> y Cerámicas</h2>
                         </div>
                     </a></li>
-                <li><a href="/mosaico" onclick="mosaicos()">
+                <li><a href="/mosaicos/corte" onclick="mosaicos()">
                         <div id="link5">
                             <h2>Mosaicos,<br> Refractarios<br> y Viguetas</h2>
                         </div>
@@ -57,10 +57,10 @@
         </div>
         <div id="menuIndustriales" style="display: none; border-top:7px solid #ff931e">
             <ul>
-            <li><a href="/industriales/corte">Corte</a></li>
-            <li><a href="/industriales/perforado">Perforado</a></li>
-            <li><a href="/industriales/pulido">Pulido</a></li>
-            <li><a href="/industriales/adhesivos">Adhesivos y Selladores</a></li>
+            <li><a href="/pisosIndustriales/corte">Corte</a></li>
+            <li><a href="/pisosIndustriales/perforado">Perforado</a></li>
+            <li><a href="/pisosIndustriales/pulido">Pulido</a></li>
+            <li><a href="/pisosIndustriales/adhesivos">Adhesivos y Selladores</a></li>
             </ul>
         </div>
 
@@ -161,7 +161,7 @@ menu responsive
 
 
         <div class="fdoCon" id="btn-gress">
-            <a class="btn-secundario collapsed" href="/gress">
+            <a class="btn-secundario collapsed" href="/gress/corte">
                 <div><img src="/img/botonera-ppal/btn_fdo_gress-ch.png" alt="Gress, Porcelanato y Cerámicas "></div>
                 Gress, Porcelanato y Cerámicas
             </a>
@@ -172,7 +172,7 @@ menu responsive
 
 
         <div class="fdoCon" id="btn-mosaicos">
-            <a class="btn-secundario collapsed" href="/mosaicos">
+            <a class="btn-secundario collapsed" href="/mosaicos/corte">
                 <div><img src="/img/botonera-ppal/btn_fdo_mos-ch.png" alt=" Mosaicos, Refractarios y Viguetas"></div>
                 Mosaicos, Refractarios y Viguetas
             </a>

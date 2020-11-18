@@ -89,6 +89,17 @@ public function listadoTaladrosEB (){
   }
 
 
+  public function show ($id)
+  {      
+    $producto = Product::find($id);
+    $sections= Section::where("category_id", "=" , '6')->get();
+    $subsections= Subsection::where("id", "=" , '31')->get();
+    $subsectionC= Subsection::where('section_id','=', '6')->get();
+    $subsectionS= Subsection::where('section_id','=', '7')->get();
+		return view('herramientas-detalle', compact('subsections','subsectionC','subsectionS', 'producto','sections'));
+  }
 
 
+
+  
 }
