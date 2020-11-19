@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use phpDocumentor\Reflection\Location;
 
-class ContactoController extends Controller
+class SuscriptionController extends Controller
 {
     public function directory()
     {
-            return view('contacto');
+            return view('/');
         }
     
-    public function enviar2()
+    public function enviar()
     {
      $nombre = $_POST['name'];
      $mail = $_POST['email'];
@@ -27,11 +28,13 @@ class ContactoController extends Controller
      $mensaje .= "Su e-mail es: " . $mail . " \r\n";     
      $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-     $para = 'distripol@distripol.com.ar';
+     //$para = 'distripol@distripol.com.ar';
+     $para = 'fer.aurelio@hotmail.com';
      $asunto = 'Quiero Suscribirme a las Ofertas';
 
      mail($para, $asunto, utf8_decode($mensaje), $header);
 
-     
+     header('Location: #');
+die();
 }
 }

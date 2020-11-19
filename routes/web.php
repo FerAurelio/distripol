@@ -17,9 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/', function () {
-    return view('index');
-});
+
 
 
 Route::get('/', function () {
@@ -36,7 +34,7 @@ Route::post('/productos', 'ProductoController@busqueda')->name('busquedaP');
 
 Route::get("/construccion-detalle/{id}", "ConstruccionController@show");
 Route::get("/marmoleria-detalle/{id}", "MarmoleriaController@show");
-Route::get("/pisosIndustriales-detalle/{id}", "PisosIndustrialesController@show");
+Route::get("/pisosIndustriales-detalle/{id}", "IndustrialesController@show");
 Route::get("/gress-detalle/{id}", "GressController@show");
 Route::get("/mosaicos-detalle/{id}", "MosaicosController@show");
 Route::get("/herramientas-detalle/{id}", "HerramientasController@show");
@@ -70,14 +68,14 @@ Route::get('/marmoleria/equipos', 'MarmoleriaController@listadoEquipos')->name('
 Route::get('/marmoleria/accesorios', 'MarmoleriaController@listadoAccesorios')->name('seccionMarmAccesorios');
 
 //Pisos Industriales
-Route::get('/pisosIndustriales/corte', 'PisosIndustrialesController@listadoCorte')->name('seccionIndCorte');
-Route::get('/pisosIndustriales/perforado', 'PisosIndustrialesController@listadoPerforado')->name('seccionIndPerforado');
-Route::get('/pisosIndustriales/pulido', 'PisosIndustrialesController@listadoPulido')->name('seccionIndPulido');
-Route::get('/pisosIndustriales/pulido2', 'PisosIndustrialesController@listadoPulido2')->name('seccionIndPulido2');
-Route::get('/pisosIndustriales/pulido3', 'PisosIndustrialesController@listadoPulido3')->name('seccionIndPulido3');
-Route::get('/pisosIndustriales/pulido4', 'PisosIndustrialesController@listadoPulido4')->name('seccionIndPulido4');
-Route::get('/pisosIndustriales/adhesivos', 'PisosIndustrialesController@listadoAdhesivos')->name('seccionIndAdhesivos');
-Route::get('/pisosIndustriales/adhesivos2', 'PisosIndustrialesController@listadoAdhesivos2')->name('seccionIndAdhesivos2');
+Route::get('/pisosIndustriales/corte', 'IndustrialesController@listadoCorte')->name('seccionIndCorte');
+Route::get('/pisosIndustriales/perforado', 'IndustrialesController@listadoPerforado')->name('seccionIndPerforado');
+Route::get('/pisosIndustriales/pulido', 'IndustrialesController@listadoPulido')->name('seccionIndPulido');
+Route::get('/pisosIndustriales/pulido2', 'IndustrialesController@listadoPulido2')->name('seccionIndPulido2');
+Route::get('/pisosIndustriales/pulido3', 'IndustrialesController@listadoPulido3')->name('seccionIndPulido3');
+Route::get('/pisosIndustriales/pulido4', 'IndustrialesController@listadoPulido4')->name('seccionIndPulido4');
+Route::get('/pisosIndustriales/adhesivos', 'IndustrialesController@listadoAdhesivos')->name('seccionIndAdhesivos');
+Route::get('/pisosIndustriales/adhesivos2', 'IndustrialesController@listadoAdhesivos2')->name('seccionIndAdhesivos2');
 
 //gress
 Route::get('/gress/corte', 'GressController@listadoCorte')->name('seccionGressCorte');
@@ -107,6 +105,7 @@ Route::get('/seguridad/fajas', 'SeguridadController@listadoFajas')->name('seccio
 Route::get('/servicios',  'ServiciosController@directory')->name('servicios');
 
 Route::get('/contacto',  'ContactoController@directory')->name('contacto');
-Route::post('/contacto/enviado',  'ContactoController@enviar2')->name('contactof');
-
+Route::get('/contactoenviado',  'ContactoenviadoController@directory')->name('contactof');
+Route::post('/contactoenviado',  'ContactoController@enviar2')->name('contactof');
+Route::post('/', 'SuscriptionController@enviar')->name('susEnviar');
 Route::get('/cotizar',  'CotizarController@directory')->name('cotizar');

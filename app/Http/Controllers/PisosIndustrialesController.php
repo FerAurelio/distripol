@@ -36,9 +36,9 @@ class PisosIndustrialesController extends Controller
     $subsectionD= Subsection::where('section_id','=', '14')->get();
     $subsectionAS= Subsection::where('section_id','=', '11')->get();
    
-    $productos= Product::where("subsection_id", "=" , '12')->get();
+    $productos= Product::where("subsection_id", "=" , '37')->get();
 
-    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections',));
+    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections'));
   }
  
   
@@ -52,7 +52,7 @@ class PisosIndustrialesController extends Controller
     
     $productos= Product::where("subsection_id", "=" , '47')->get();
 
-    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections',));
+    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections'));
 }
 
   
@@ -67,7 +67,7 @@ class PisosIndustrialesController extends Controller
    
     $productos= Product::where("subsection_id", "=" , '38')->get();
 
-    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections',));
+    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections'));
 }
 
   public function listadoPulido2 (){
@@ -80,7 +80,7 @@ class PisosIndustrialesController extends Controller
    
     $productos= Product::where("subsection_id", "=" , '39')->get();
 
-    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections',));
+    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections'));
 }
 
 public function listadoPulido3 (){
@@ -93,7 +93,7 @@ public function listadoPulido3 (){
     
     $productos= Product::where("subsection_id", "=" , '40')->get();
 
-    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections',));
+    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections'));
 }
   public function listadoPulido4 (){
     $sections= Section::where("category_id", "=" , '3')->get();
@@ -105,7 +105,7 @@ public function listadoPulido3 (){
    
     $productos= Product::where("subsection_id", "=" , '41')->get();
 
-    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections',));
+    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections'));
 }
 
  
@@ -120,7 +120,7 @@ public function listadoAdhesivos (){
     $subsectionAS= Subsection::where('section_id','=', '11')->get();
    
     $productos= Product::where("subsection_id", "=" , '7')->get();
-    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections',));
+    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections'));
 }
 
 public function listadoAdhesivos2 (){
@@ -132,7 +132,7 @@ public function listadoAdhesivos2 (){
     $subsectionAS= Subsection::where('section_id','=', '11')->get();
     
     $productos= Product::where("subsection_id", "=" , '8')->get();
-    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections',));
+    return view('pisosIndustriales', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','productos','sections'));
 }
 
 
@@ -146,7 +146,7 @@ public function show ($id)
     $subsectionD= Subsection::where('section_id','=', '14')->get();
     $subsectionAS= Subsection::where('section_id','=', '11')->get();
     
-		return view('pisosIndustriales-detalle', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','producto','sections',));
+		return view('pisosIndustriales-detalle', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAS','producto','sections'));
   }
 
 

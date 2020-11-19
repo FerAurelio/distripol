@@ -17,7 +17,7 @@
     @include('partials.navbar')
     @yield('content')
   
-  @include('partials.suscription')
+  @include('suscription')
 @include('partials.marcas')
   @include('partials.footer')
 </body>

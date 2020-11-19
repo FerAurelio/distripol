@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('pageTitle',"Marmoleria")
+@section('pageTitle',"Pisos Industriales")
 @section('content')
 @include('partials.botonera')
 @include('partials.cortarP')
@@ -106,7 +106,7 @@
                     {{cortarPalabras($producto->characterist)}}
                 @endif</h6>
             </div>
-            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/pisosIndustriales-detalle/{{$producto->id}}'" id="detalle">Detalle</button>
+            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/{{$producto->detalle}}/{{$producto->id}}'" id="detalle">Detalle</button>
                 <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
             
         </article>

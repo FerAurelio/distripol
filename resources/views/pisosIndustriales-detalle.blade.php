@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('pageTitle',"Marmoleria")
+@section('pageTitle',"Pisos Industriales")
 @section('content')
 @include('partials.botonera')
 @include('partials.cortarP')
@@ -77,12 +77,7 @@
     
     
     <section class="contenidoProds">
-    @foreach ($subsections as $subsection)
-      
-       • {{$subsection->title}}
-      
-       @endforeach
-       <br>
+   
     <div class="centrarProductos">
        <div class="center">
       

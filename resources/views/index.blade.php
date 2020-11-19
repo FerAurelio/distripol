@@ -66,8 +66,8 @@
 
         <div id="menuMaquinas" style="display: none; border-top:7px solid #F41B7A;">
             <ul style=" justify-content:flex-end;">
-                <li><a style="margin:0 85px;" href="maquinas/herramientas">Herramientas Eléctricas y con Motor a Explosión</a></li>
-                <li><a style="margin:0 85px;" href="maquinas/seguridad">Seguridad y Protección Personal</a></li>
+                <li><a style="margin:0 85px;" href="herramientas/amoladoras">Herramientas Eléctricas y con Motor a Explosión</a></li>
+                <li><a style="margin:0 85px;" href="seguridad/guantes">Seguridad y Protección Personal</a></li>
 
             </ul>
         </div>

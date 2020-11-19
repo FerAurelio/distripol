@@ -642,7 +642,7 @@ h6 {
 .bg {
     display: none;
     background-color: #000;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: 0;
@@ -650,7 +650,7 @@ h6 {
     opacity: .8;
 }
 
-.form_suscrip {
+.formSuscrip {
     display: none;
     background-color: #fff;
     font-size: 0.9em;

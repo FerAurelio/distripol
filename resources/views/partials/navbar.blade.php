@@ -92,5 +92,5 @@ $secProduct=[
   </div>  
 </header>
 <div class="textoLogo" ><img class="imgLogo" src="../img/Herramientas-e-Insumos-para-Empresas-Constructoras.png" alt="Herramientas e Insumos para Marmolerías y Empresas Constructoras">
-  <div class="textML"> <a href="https://listado.mercadolibre.com.ar/_CustId_228264258">Visite Nuestro E-Shop <img src="../img/logo-ML.png" alt="E-shop Mercado Libre"></a></div>
+  <div class="textML"> <a href="https://listado.mercadolibre.com.ar/_CustId_228264258" target="_blank">Visite Nuestro E-Shop <img src="../img/logo-ML.png" alt="E-shop Mercado Libre"></a></div>
 </div>
