@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('pageTitle',"Productos")
+@section('pageTitle',"Distripol Herramientas S.R.L. - Herramientas e Insumos para Marmolerías y Empresas Constructoras")
 @section('content')
 <div>
     <main class="productos">

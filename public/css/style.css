@@ -37,6 +37,10 @@ figure {
     color: black;
 }
 
+.tProd {
+    font-size: 0.9em;
+}
+
 ul,
 ol {
     padding: 0;
