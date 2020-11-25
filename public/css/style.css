@@ -362,7 +362,7 @@ a.nav-link:hover {
     flex-wrap: wrap;
     background: linear-gradient( to right, white, yellow);
     padding: 5px 15px;
-    height: 15%;
+    min-height: 10%;
 }
 
 .imgLogo {
@@ -659,6 +659,10 @@ h6 {
     opacity: .8;
 }
 
+.quality {
+    width: 80%;
+}
+
 .formSuscrip {
     display: none;
     background-color: #fff;
@@ -893,17 +897,6 @@ h6 {
         align-items: flex-start;
     }
     .contenidoProds {
-        width: 69%;
-    }
-    .menuLeft {
-        width: 30%;
-        background-color: #d6d6d6;
-        margin: 0px;
-    }
-}
-
-@media (max-width: 768px) {
-    .contenidoProds {
         width: 74%;
     }
     .menuLeft {
@@ -911,6 +904,9 @@ h6 {
         background-color: #d6d6d6;
         margin: 0px;
     }
+}
+
+@media (max-width: 768px) {
     article {
         width: 220px;
     }

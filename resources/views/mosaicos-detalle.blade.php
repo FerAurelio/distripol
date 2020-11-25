@@ -155,7 +155,7 @@
                                      <div class="d-flex justify-content-md-around m-1">
                                      @if ($producto->mlLink != NULL)  <button class="btn btn-warning font-weight-bold" style="color:darkblue" onclick= "window.open('{{$producto->mlLink}}','_blank') " id="detalle"> Comprar en <img src="../img/logo-ML.png" style="width: 100px; margin-left:10px" alt="Comprar en Mercado Libre"></button>
                                      @else 
-                                     <button class="btn btn-danger" id="cotizar">Cotizar</button>
+                            <!--      <button class="btn btn-danger" id="cotizar">Cotizar</button> -->
                                      @endif
                                      <button class="btn btn-success " onClick="history.go(-1);" id="volver">Volver</button>
                                      </div> 

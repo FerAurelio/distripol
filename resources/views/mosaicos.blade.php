@@ -70,10 +70,10 @@
             <div class="d-flex justify-content-md-around m-1">
             <button class="btn btn-success" onclick= "location.href = '/marmoleria-detalle/{{$producto->id}}'" id="detalle">Detalle</button>
            
-            <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
+     <!--     <button class="btn btn-danger" id="cotizar">Cotizar</button></div>    -->
             @else            
-            <div class="d-flex justify-content-md-around m-1">
-           <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
+    <!--      <div class="d-flex justify-content-md-around m-1">
+           <button class="btn btn-danger" id="cotizar">Cotizar</button></div>     -->
             @endif 
         </article>
        

@@ -75,9 +75,9 @@
       
        
       
-              <div class="col-md-12  mb-3">       
+              <div class="col-sm-12  mb-3">       
                   <div class="row no-gutters border border-#f1f1f1 rounded-sm">
-                                  <div class="col-md-3">
+                                  <div class="col-sm-3">
                                      <div class="d-flex justify-content-center p-3" style="background-color: #f1f1f1">{{$producto->title}}</div>
                                         @if ($producto->image_1 != NULL)
                                         
@@ -92,13 +92,13 @@
                                             @if ($producto->power_id != NULL)<div class="tProd text-sm-center mt-1">{{$producto->power->description}}</div> @endif
                                       </div>
 
-                                       <div class="col-md-9 ">
+                                       <div class="col-sm-9 ">
                                            <div class="row no-gutters">
-                                            <div class="col-md-2 d-flex aling-items-center">
+                                            <div class="col-sm-2 d-flex aling-items-center">
                                                <div class="d-flex flex-column justify-content-center aling-items-center flex-wrap"  style=" flex-direction: column">
                                            
                                                @if ($producto->quality_id != NULL)
-                                                         <img src=  "data:image/jpeg;base64,{{base64_encode( $producto->quality->image_1)}}" style="width: 80%;" class="card-img  " alt="{{$producto->title}}">
+                                                         <img src=  "data:image/jpeg;base64,{{base64_encode( $producto->quality->image_1)}}" class="card-img quality " alt="{{$producto->title}}">
                                                        @endif
                                            
                                            
@@ -130,7 +130,7 @@
                                                    <br><br><br>
                                               </div></div>
          @else
-                                            <div class="col-md-5  ml-3 mr-4 " >
+                                            <div class="col-sm-5  ml-3 mr-4 " >
                                                 
                                                @if ($producto->aplication_id != NULL)
                                                <div style="min-height: 180px;"> <h5 class="card-title pl-2" style="background-color: #f1f1f1">Aplicación</h5> 
@@ -191,15 +191,22 @@
 
 
                                        
-                                     <div class="d-flex justify-content-md-around m-1">
-                                     @if ($producto->mlLink != NULL)  <button class="btn btn-warning font-weight-bold" style="color:darkblue" onclick= "window.open('{{$producto->mlLink}}','_blank') " id="detalle"> Comprar en <img src="../img/logo-ML.png" style="width: 100px; margin-left:10px" alt="Comprar en Mercado Libre"></button>
-                                     @else 
-                                     <button class="btn btn-danger" id="cotizar">Cotizar</button>
+                                   
+                                   </div>
+                             </div>  
+                             
+                             
+                             
+                             <div class="d-flex justify-content-md-around m-1">
+                                     @if ($producto->mlLink != NULL)  
+                                     <button class="btn btn-warning font-weight-bold" style="color:darkblue" onclick= "window.open('{{$producto->mlLink}}','_blank') " id="detalle"> Comprar en <img src="../img/logo-ML.png" style="width: 100px; margin-left:10px" alt="Comprar en Mercado Libre"></button>
+                                    
+                                    @else 
+                                    <!-- <button class="btn btn-danger" id="cotizar">Cotizar</button>
+                                     -->
                                      @endif
                                      <button class="btn btn-success " onClick="history.go(-1);" id="volver">Volver</button>
                                      </div> 
-                                   </div>
-                             </div>
                          </div>
                      </div>
                  </div>

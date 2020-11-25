@@ -26,7 +26,7 @@
                <h6>{{cortarPalabras($producto->characterist)}}</h6>
                    </div>
                     <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/{{$producto->detalle}}/{{$producto->id}}'" id="detalle">Detalle</button>
-               <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
+       <!--     <button class="btn btn-danger" id="cotizar">Cotizar</button></div>   -->
            
               </article>
           @endforeach
@@ -47,7 +47,7 @@
                <h6>{{cortarPalabras($productoC->characterist)}}</h6>
                    </div>
                     <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/{{$productoC->detalle}}/{{$productoC->id}}'" id="detalle">Detalle</button>
-               <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
+            <!--     <button class="btn btn-danger" id="cotizar">Cotizar</button></div>   -->
            
               </article>
           @endforeach
@@ -70,7 +70,7 @@
                <h6>{{cortarPalabras($productoA->characterist)}}</h6>
                  </div>
                  <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/{{$productoA->detalle}}/{{$productoA->id}}'" id="detalle">Detalle</button>
-               <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
+               <!--     <button class="btn btn-danger" id="cotizar">Cotizar</button></div>   -->
            </article>
           @endforeach
 
@@ -92,7 +92,7 @@
                   <h6>{{cortarPalabras($productoB->characterist)}}</h6>
                  </div>
                   <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/{{$productoB->detalle}}/{{$productoB->id}}'" id="detalle">Detalle</button>
-                 <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
+                 <!--     <button class="btn btn-danger" id="cotizar">Cotizar</button></div>   -->
               </article>
            @endforeach
 
