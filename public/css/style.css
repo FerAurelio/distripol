@@ -38,7 +38,7 @@ figure {
 }
 
 .tProd {
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 ul,
@@ -627,6 +627,11 @@ h6 {
     text-align: center;
 }
 
+.card-title {
+    font-size: 1em;
+    font-weight: 600;
+}
+
 .card-header {
     text-align: center;
     font-size: 0.9em;
@@ -673,6 +678,15 @@ h6 {
     color: yellow;
     font-size: medium;
     border: 0;
+}
+
+.img4 {
+    transition: transform 1s;
+}
+
+.img4:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
 }
 
 @media (max-width: 1280px) {

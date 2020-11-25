@@ -41,4 +41,7 @@
 
 <script type="text/javascript" src="/js/btnProdPpal.js"></script>
 
+<!--lightbox-->
+<script type="text/javascript" src="/js/lightbox.js"></script>
+<script type="text/javascript" src="/js/lightbox-plus-jquery.js"></script>
 
