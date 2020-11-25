@@ -27,7 +27,7 @@ body {
 figure {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
 }
 

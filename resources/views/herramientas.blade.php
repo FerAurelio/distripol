@@ -76,9 +76,16 @@
                 </figure>
                 <h6>{{cortarPalabras($producto->characterist)}}</h6>
             </div>
-            <div class="d-flex justify-content-md-around m-1"><button class="btn btn-success" onclick= "location.href = '/herramientas-detalle/{{$producto->id}}'" id="detalle">Detalle</button>
-                <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
+           @if ($producto->detalle != NULL)
             
+            <div class="d-flex justify-content-md-around m-1">
+            <button class="btn btn-success" onclick= "location.href = '/{{$producto->detalle}}/{{$producto->id}}'" id="detalle">Detalle</button>
+           
+            <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
+            @else            
+            <div class="d-flex justify-content-md-around m-1">
+           <button class="btn btn-danger" id="cotizar">Cotizar</button></div>
+            @endif 
         </article>
        
         @endforeach
