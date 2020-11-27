@@ -108,4 +108,7 @@ Route::get('/contacto',  'ContactoController@directory')->name('contacto');
 Route::get('/contactoenviado',  'ContactoenviadoController@directory')->name('contactof');
 Route::post('/contactoenviado',  'ContactoController@enviar2')->name('contactof');
 Route::post('/', 'SuscriptionController@enviar')->name('susEnviar');
+
 Route::get('/cotizar',  'CotizarController@directory')->name('cotizar');
+Route::get('/cotizarenviado',  'CotizarenviadoController@directory')->name('cotizarfg');
+Route::post('/cotizarenviado',  'CotizarController@enviar2')->name('cotizarfp');

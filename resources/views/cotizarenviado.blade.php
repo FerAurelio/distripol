@@ -14,7 +14,7 @@ para ser asesorado correctamente:
     <section class="sectionCon">
         <h1>CONTACTO</h1>
         <div>
-            <h3>¡Su mensaje se envió correctamente!</h3>
+            <h3>¡Su pedido de cotización se envió correctamente!</h3>
             Pronto nos pondremos en contacto.
         </div>
      <br><br>

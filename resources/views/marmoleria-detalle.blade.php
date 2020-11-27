@@ -91,7 +91,7 @@
     
     <section class="contenidoProds">
     
-    <div class="centrarProductos">
+    <div>
        <div class="center">
       
        
@@ -242,7 +242,8 @@
        
         
         </div>
-        
+     
+        </div>   
     </section>
 
 

@@ -17,7 +17,7 @@
            
                        <div class="card-body">
                <figure style="display:flex; justify-content: center; align-items:flex-end; flex-wrap:wrap" > 
-               <img src=  "data:image/jpeg;base64,{{base64_encode( $producto->image_1 )}}" style="max-width:100%" alt="{{$producto->title}}">
+               <img src=  "data:image/jpeg;base64,{{base64_encode( $producto->image_1 )}}" style="max-width:120px" alt="{{$producto->title}}">
                 @if ($producto->brand_id != NULL)
                 <br>
                 <img src= "data:image/jpeg;base64,{{base64_encode( $producto->brand->photo )}}" alt="{{$producto->brand->title}}" class="mt-1">
@@ -38,7 +38,7 @@
            
                        <div class="card-body">
                <figure style="display:flex; justify-content: center; align-items:flex-end; flex-wrap:wrap" > 
-               <img src=  "data:image/jpeg;base64,{{base64_encode( $productoC->image_1 )}}" style="max-width:100%" alt="{{$productoC->title}}">
+               <img src=  "data:image/jpeg;base64,{{base64_encode( $productoC->image_1 )}}" style="max-width:120px" alt="{{$productoC->title}}">
                 @if ($productoC->brand_id != NULL)
                 <br>
                 <img src= "data:image/jpeg;base64,{{base64_encode( $productoC->brand->photo )}}" alt="{{$productoC->brand->title}}" class="mt-1">
@@ -61,7 +61,7 @@
            
                    <div class="card-body">
                <figure style="display:flex; justify-content: center; align-items:flex-end; flex-wrap:wrap" > 
-               <img src=  "data:image/jpeg;base64,{{base64_encode( $productoA->image_1 )}}" style="max-width:100%" alt="{{$productoA->title}}">
+               <img src=  "data:image/jpeg;base64,{{base64_encode( $productoA->image_1 )}}" style="max-width:120px" alt="{{$productoA->title}}">
                 @if ($productoA->brand_id != NULL)
                 <br>
                 <img src= "data:image/jpeg;base64,{{base64_encode( $productoA->brand->photo )}}" alt="{{$productoA->brand->title}}" class="mt-1">
@@ -83,7 +83,7 @@
            
                   <div class="card-body">
                  <figure style="display:flex; justify-content: center; align-items:flex-end; flex-wrap:wrap" > 
-                 <img src=  "data:image/jpeg;base64,{{base64_encode( $productoB->image_1 )}}" style="max-width:100%" alt="{{$productoB->title}}">
+                 <img src=  "data:image/jpeg;base64,{{base64_encode( $productoB->image_1 )}}" style="max-width:120px" alt="{{$productoB->title}}">
                   @if ($productoB->brand_id != NULL)
                   <br>
                   <img src= "data:image/jpeg;base64,{{base64_encode( $productoB->brand->photo )}}" alt="{{$productoB->brand->title}}" class="mt-1">
