@@ -751,6 +751,10 @@ h6 {
     width: 100px;
 }
 
+.imgC:hover {
+    opacity: 0.5;
+}
+
 .img4:hover {
     opacity: 0.5;
 }

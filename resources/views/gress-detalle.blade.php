@@ -164,7 +164,7 @@ Gress, Porcelanato y Cerámicas
                                   
                               
                              
-                    </div>
+                    
                              
                              <div class="btn-volver">
                                      @if ($producto->mlLink != NULL)  
@@ -179,7 +179,7 @@ Gress, Porcelanato y Cerámicas
               </div>
               <!-- -->
                    
-
+              </div>
 
 
 

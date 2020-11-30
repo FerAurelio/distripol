@@ -125,10 +125,10 @@
                                         
                                                    <h5 class="card-title pl-2" style="background-color: #f1f1f1 ">Características</h5> 
                                                  <div class="tProd pl-3">    
-                                                 <img src=  "data:image/jpeg;base64,{{base64_encode( $producto->caracterist_image)}}" class="card-img  m-1 " alt="{{$producto->title}}">
-                                                   </div >
+                                                 <a href="data:image/jpeg;base64,{{base64_encode( $producto->caracterist_image)}}" data-lightbox="image3" data-title="{{$producto->title}}"><img src=  "data:image/jpeg;base64,{{base64_encode( $producto->caracterist_image)}}" class="card-img  m-1 imgC" alt="{{$producto->title}}">
+                                                 </a></div >
                                                    <br><br><br>
-                                       
+                                                   
          @else
                          <div class="parte2-1" >                                            
                                                 
@@ -197,7 +197,7 @@
                                   
                               
                              
-                    </div>
+                    
                              
                              <div class="btn-volver">
                                      @if ($producto->mlLink != NULL)  
@@ -211,7 +211,7 @@
                                      </div> 
               </div>
               <!-- -->
-                   
+              </div>      
 
 
 

@@ -205,7 +205,7 @@
                                   
                               
                              
-                    </div>
+                    
                              
                              <div class="btn-volver">
                                      @if ($producto->mlLink != NULL)  
@@ -221,7 +221,7 @@
               <!-- -->
                    
 
-
+              </div>
 
 
           

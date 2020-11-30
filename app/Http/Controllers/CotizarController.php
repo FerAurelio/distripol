@@ -28,9 +28,9 @@ class CotizarController extends Controller
          $header .= "Content-Type: text/plain";
     
          $mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-         $mensaje .= "Su número telefónico es: " . $domicilio . " \r\n";
-         $mensaje .= "Su número telefónico es: " . $provincia . " \r\n";
-         $mensaje .= "Su número telefónico es: " . $localidad . " \r\n";
+         $mensaje .= "Con domicilio en: " . $domicilio . " \r\n";
+         $mensaje .= "De provincia de: " . $provincia . " \r\n";
+         $mensaje .= "De la localidad de: " . $localidad . " \r\n";
          $mensaje .= "Su número telefónico es: " . $telefono . " \r\n";
          $mensaje .= "De la Empresa: " . $empresa . " \r\n";
          $mensaje .= "Su e-mail es: " . $mail . " \r\n";

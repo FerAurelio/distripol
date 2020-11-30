@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('pageTitle',"Contacto")
+@section('pageTitle',"Cotizar")
 @section('content')
 <main class="mainCon">
     <aside class="asideLeftCon">
@@ -12,7 +12,7 @@ para ser asesorado correctamente:
 </div>
     </aside>
     <section class="sectionCon">
-        <h1>CONTACTO</h1>
+        <h1>Cotizar</h1>
         <div>
             <h3>¡Su pedido de cotización se envió correctamente!</h3>
             Pronto nos pondremos en contacto.

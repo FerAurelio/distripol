@@ -113,10 +113,15 @@
                  <img src= "data:image/jpeg;base64,{{base64_encode( $producto->brand->photo )}}" alt="{{$producto->brand->title}}" class="mt-1">
                  @endif
                 </figure>
-                <h6>@if ($producto->aplication_id != NULL)
-                    {{cortarPalabras($producto->aplication->description)}}
+                @if ($producto->aplication_id != NULL)
+                <div class="tProd pl-3">{{$producto->aplication->description}}</div>
+                @if ($producto->aplication->item1 != NULL)<div class="tProd pl-3">{{$producto->aplication->item1}}</div> @endif
+                 @if ($producto->aplication->item2 != NULL)<div class="tProd pl-3">{{$producto->aplication->item2}}</div> @endif
+                @if ($producto->aplication->item3 != NULL)<div class="tProd pl-3">{{$producto->aplication->item3}}</div> @endif
+                @if ($producto->aplication->item4 != NULL)<div class="tProd pl-3">{{$producto->aplication->item4}}</div> @endif
+              
                     @elseif($producto->aplication_id === NULL)
-                    {{cortarPalabras($producto->characterist)}}
+                    <h6>  {{cortarPalabras($producto->characterist)}}
                 @endif
                 </h6>
             </div>
