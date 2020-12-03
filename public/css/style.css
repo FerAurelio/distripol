@@ -708,6 +708,7 @@ h6 {
     display: flex;
     justify-content: center;
     border-radius: 5px 0 0 0;
+    text-align: center;
 }
 
 .imgp1 {
@@ -718,12 +719,22 @@ h6 {
     width: 100px;
 }
 
+.parte2V {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .parte2 {
     width: 70%;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .parte2-1 {
@@ -735,13 +746,25 @@ h6 {
     width: 49%;
 }
 
+.p1-2G {
+    width: 100%;
+}
+
+.parte1Grande {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
 .p1-2Content {
     width: 100px;
 }
 
 .btn-volver {
     margin: 20px;
-    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -799,6 +822,7 @@ h6 {
     .contenidoProds div.centrarProductos {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .menuLeft {
         width: 20%;
@@ -821,14 +845,12 @@ h6 {
         align-items: flex-start;
         flex-direction: row;
     }
-    .p1-1 {
-        width: 80%;
-    }
     .p1Titulo {
         width: 100%;
         background-color: #f1f1f1;
         display: flex;
         justify-content: center;
+        text-align: center;
     }
     .parte2 {
         width: 60%;
@@ -1125,11 +1147,11 @@ h6 {
         width: 100%;
     }
     .parte2-1 {
-        width: 40%;
-        margin-right: 2%;
+        width: 100%;
+        margin-right: 0%;
     }
     .parte2-2 {
-        width: 40%;
+        width: 100%;
     }
     .imgp1 {
         width: 120px;

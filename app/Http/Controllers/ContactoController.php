@@ -32,7 +32,7 @@ class ContactoController extends Controller
      $mensaje .= "Mensaje: " . $consulta . " \r\n";
      $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-     //$para = 'distripol@distripol.com.ar';
+     //$para = 'contacto@distripol.com.ar';
      $para = 'fer.aurelio@hotmail.com';
      $asunto = 'Consulta desde la web';
 

@@ -88,32 +88,62 @@
 
     
     
-    
     <section class="contenidoProds">
     
-    <div>
+    <div class="centrarProductos">
        <div class="center">
       
        
       
-              <div class="detalleProducto">       
-                  <div class="parte1">
-                  <div class="p1-2">
-                      <div class="p1Titulo">{{$producto->title}}</div>
+              <div class="detalleProducto">  
+  @if($producto->aplication_id != NULL || $producto->characterist != NULL || $producto->diameters != NULL || $producto->segment_id != NULL)     
+                 <div class="parte1"> 
+  @else
+                <div class="parte1Grande">
+  @endif
+                  @if($producto->quality_id === NULL && $producto->image_2 === NULL  )
+                  <div class="p1-2G">
+                  <div class="p1Titulo">{{$producto->title}}</div>
                                         @if ($producto->image_1 != NULL)
                                         
-                                                  <div class="d-flex justify-content-center align-items-end p-2 " style="background-color: #f9f9f9">
+                                                  <div class="d-flex justify-content-center align-items-end p-2 flex-wrap " style="background-color: #f9f9f9">
                                                   <img  src=  "data:image/jpeg;base64,{{base64_encode( $producto->image_1 )}}"  class="card-img imgp1 "  alt="{{$producto->title}}">
                                               @endif                                            
                                             
-                                                      @if ($producto->brand_id != NULL)                                                         
+                                                      @if ($producto->brand_id != NULL) 
+                                                      @if($producto->brand->title != "ABRAMIL")                                                        
                                                             <img class="ml-2 " src= "data:image/jpeg;base64,{{base64_encode( $producto->brand->photo )}}" alt="{{$producto->brand->title}}"  >
+                                                            @else
+                                                            <img class="ml-2 " style="width: 60%;" src= "data:image/jpeg;base64,{{base64_encode( $producto->brand->photo )}}" alt="{{$producto->brand->title}}"  >
+                                                            @endif
                                                        @endif
                                                    </div>                                       
                                             @if ($producto->power_id != NULL)<div class="tProd text-sm-center mt-1">{{$producto->power->description}}</div> @endif
                    
 
-                                            </div>              
+                                            </div>    </div>     
+                  @else
+                  <div class="p1-1">
+                  
+                      <div class="p1Titulo">{{$producto->title}}</div>
+                                        @if ($producto->image_1 != NULL)
+                                        
+                                                  <div class="d-flex justify-content-center align-items-end p-2 flex-wrap " style="background-color: #f9f9f9">
+                                                  <img  src=  "data:image/jpeg;base64,{{base64_encode( $producto->image_1 )}}"  class="card-img imgp1 "  alt="{{$producto->title}}">
+                                              @endif                                            
+                                            
+                                                      @if ($producto->brand_id != NULL) 
+                                                      @if($producto->brand->title != "ABRAMIL")                                                        
+                                                            <img class="ml-2 " src= "data:image/jpeg;base64,{{base64_encode( $producto->brand->photo )}}" alt="{{$producto->brand->title}}"  >
+                                                            @else
+                                                            <img class="ml-2 " style="width: 60%;" src= "data:image/jpeg;base64,{{base64_encode( $producto->brand->photo )}}" alt="{{$producto->brand->title}}"  >
+                                                            @endif
+                                                       @endif
+                                                   </div>                                       
+                                            @if ($producto->power_id != NULL)<div class="tProd text-sm-center mt-1">{{$producto->power->description}}</div> @endif
+                   
+
+                                            </div>           
                      <div class="p1-2">
                             <div class="p1-2Content">
                                 <div class="d-flex flex-column justify-content-center aling-items-center flex-wrap"  style=" flex-direction: column">
@@ -138,23 +168,28 @@
                                </div>
                             </div> 
                     </div>
-                  </div>        
-                                           
+                  </div>    
+            @endif 
+            
+            
+
+                  @if ($producto->caracterist != NULL  && $producto->aplication_id != NULL)                     
+                  
                     <div class="parte2">
                                                @if ($producto->caracterist_image != NULL)
                           <div class="parte2-1" >
                                         
                                                    <h5 class="card-title pl-2" style="background-color: #f1f1f1 ">Características</h5> 
                                                  <div class="tProd pl-3">    
-                                                 <img src=  "data:image/jpeg;base64,{{base64_encode( $producto->caracterist_image)}}" class="card-img  m-1 " alt="{{$producto->title}}">
-                                                   </div >
+                                                 <a href="data:image/jpeg;base64,{{base64_encode( $producto->caracterist_image)}}" data-lightbox="image3" data-title="{{$producto->title}}"><img src=  "data:image/jpeg;base64,{{base64_encode( $producto->caracterist_image)}}" class="card-img  m-1 imgC" alt="{{$producto->title}}">
+                                                 </a></div >
                                                    <br><br><br>
-                                       
-         @else
+                                                   
+                                               @else
                          <div class="parte2-1" >                                            
                                                 
                                                @if ($producto->aplication_id != NULL)
-                                               <div style="min-height: 180px;"> <h5 class="card-title pl-2" style="background-color: #f1f1f1">Aplicación</h5> 
+                                                <div style="min-height: 180px;"> <h5 class="card-title pl-2" style="background-color: #f1f1f1">Aplicación</h5> 
                                                  <div class="tProd pl-3">{{$producto->aplication->description}}   
                                                  </div> 
                                                  @if ($producto->aplication->item1 != NULL)<div class="tProd pl-3">{{$producto->aplication->item1}}</div> @endif
@@ -164,18 +199,20 @@
                                                  </div> 
                                                 @endif
                                               @if ($producto->characterist != NULL)
-                                              <div >
+                                                 <div >
                                                    <h5 class="card-title pl-2" style="background-color: #f1f1f1 ">Características</h5> 
                                                  <div class="tProd pl-3">   {{$producto->characterist}}   
                                                    </div >
                                                    <br><br><br>
-                                              </div>
+                                                  </div>
                                                @endif
-                                               
+                                                     
                                                </div>
-                          
+                                               @endif                   
                     
-                                                                  
+                 @else 
+                        <div class="parte2V">
+                  @endif 
                                            <div class="parte2-2">
                                                
                                               @if ($producto->segment_id != NULL) 
@@ -195,7 +232,7 @@
                                                
                                                    </div>
                                                @endif
-                                              
+                                        
                                                @if ($producto->diameters != NULL)  
                                                <div >
                                                <h5 class="card-title pl-2" style="background-color: #f1f1f1">Medidas</h5> 
@@ -206,19 +243,20 @@
                                                  
                                                </div>
                                            </div>
-                                      
-       @endif
+               </div>
+      
 
-                            </div>
+                            
+                            
 
-
-
-                                       
-                                   
+                                 
+                                  
+                          </div>              
                                   
                               
                              
-                    
+                          </div></div>
+                             
                              
                              <div class="btn-volver">
                                      @if ($producto->mlLink != NULL)  
@@ -232,18 +270,17 @@
                                      </div> 
               </div>
               <!-- -->
-                   
-
-              </div>
+              </div>      
+              
+              
 
 
           
 
        
         
-        </div>
-     
-        </div>   
+              </div></div>
+        
     </section>
 
 

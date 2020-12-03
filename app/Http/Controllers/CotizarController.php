@@ -37,7 +37,7 @@ class CotizarController extends Controller
          $mensaje .= "Mensaje: " . $consulta . " \r\n";
          $mensaje .= "Enviado el " . date('d/m/Y', time());
     
-         //$para = 'distripol@distripol.com.ar';
+         //$para = 'presupuestos@distripol.com.ar';
          $para = 'fer.aurelio@hotmail.com';
          $asunto = 'Pedido de presupuesto desde la web';
     
