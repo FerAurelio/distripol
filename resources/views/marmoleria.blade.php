@@ -10,8 +10,8 @@
             
         Marmolería y Piedras Naturales
                 
-            </div
-        <nav>
+</div>
+<nav class="displayMenu">
             <ul ><b>CORTE</b>
            
        
@@ -140,8 +140,90 @@
         @endforeach
         </div>
         </div>
+       <!--  <div class="displayAtras"><button class="btn btn-success " onClick="window.location.href='/'" id="volver">Volver</button></div>
+-->
     </section>
+    <aside class="menuLeft asideMobile">
+<div class="p-2" style="border-top: 7px solid #7ac943; background-color:#006837;color:white" >
+        
+            
+        Marmolería y Piedras Naturales
+                
+</div>
+<nav>
+            <ul ><b>CORTE</b>
+           
+       
+            @foreach($subsectionC as $subsectionCo)
+                      
+                <li>
+                    <a href="{{$subsectionCo->links}}">
+                        <div>
+                            {{$subsectionCo->title}}</div>
+                    </a>
+                </li>
+            @endforeach
 
+  </ul>
+  <ul ><b>PERFORADO</b>
+           
+       
+                      @foreach($subsectionP as $subsectionPe)
+                      
+                <li>
+                    <a href="{{$subsectionPe->links}}">
+                        <div>
+                            {{$subsectionPe->title}}</div>
+                    </a>
+                </li>
+              @endforeach
+
+  </ul>
+  <ul ><b>DESBASTE / PULIDO / LUSTRADO</b>
+           
+       
+                      @foreach($subsectionD as $subsectionDe)
+                      
+                <li>
+                    <a href="{{$subsectionDe->links}}">
+                        <div>
+                            {{$subsectionDe->title}}</div>
+                    </a>
+                </li>
+              @endforeach
+
+  </ul>
+  <ul ><b>ADHESIVOS Y SELLADORES</b>
+           
+       
+           @foreach($subsectionAS as $subsectionAse)
+           
+     <li>
+         <a href="{{$subsectionAse->links}}">
+             <div>
+                 {{$subsectionAse->title}}</div>
+         </a>
+     </li>
+   @endforeach
+
+</ul>
+<ul ><b>ACCESORIOS Y EQUIPOS</b>
+           
+       
+           @foreach($subsectionAE as $subsectionAeq)
+           
+     <li>
+         <a href="{{$subsectionAeq->links}}">
+             <div>
+                 {{$subsectionAeq->title}}</div>
+         </a>
+     </li>
+   @endforeach
+
+</ul>
+        </nav>
+
+    </aside>
 
 </main>
 

@@ -12,7 +12,7 @@
             Construcción, Obra Civil y Obra Vial
         
     </div>
-  <nav>
+    <nav class="displayMenu">
   
 <ul> 
             
@@ -121,7 +121,70 @@
         @endforeach
         </div>
         </div>
+      <!--  <div class="displayAtras"><button class="btn btn-success " onClick="window.location.href='/'" id="volver">Volver</button></div>
+-->
     </section>
+
+    <aside class="menuLeft asideMobile">
+
+<div class="p-2" style="border-top: 7px solid #fcee21;background-color:#006837;color:white" >
+        
+            
+            Construcción, Obra Civil y Obra Vial
+        
+    </div>
+    <nav>
+  
+<ul> 
+            
+           <b>CORTE</b>
+            
+            
+     
+             @foreach($subsectionC as $subsectionCo)
+                      
+                <li>
+                    <a href="{{$subsectionCo->links}}">
+                        <div>
+                            {{$subsectionCo->title}}</div>
+                    </a>
+                </li>
+            @endforeach
+            
+           </ul>
+          
+
+           <ul ><b>PERFORADO</b>
+           
+       
+                      @foreach($subsectionP as $subsectionPe)
+                      
+                <li>
+                    <a href="{{$subsectionPe->links}}">
+                        <div>
+                            {{$subsectionPe->title}}</div>
+                    </a>
+                </li>
+              @endforeach
+
+               </ul>
+  <ul ><b>DEMOLICION</b>
+           
+       
+                      @foreach($subsectionD as $subsectionDe)
+                      
+                <li>
+                    <a href="{{$subsectionDe->links}}">
+                        <div>
+                            {{$subsectionDe->title}}</div>
+                    </a>
+                </li>
+              @endforeach
+
+  </ul>
+</div>
+</div>
+    </aside>
 
 
 </main>

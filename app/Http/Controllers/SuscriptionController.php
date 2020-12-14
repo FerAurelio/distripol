@@ -28,8 +28,8 @@ class SuscriptionController extends Controller
      $mensaje .= "Su e-mail es: " . $mail . " \r\n";     
      $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-     //$para = 'suscripcion@distripol.com.ar';
-     $para = 'fer.aurelio@hotmail.com';
+     $para = 'info@distripol.com.ar';
+     
      $asunto = 'Quiero Suscribirme a las Ofertas';
 
      mail($para, $asunto, utf8_decode($mensaje), $header);

@@ -11,7 +11,7 @@
         Máquinas, Equipamiento, Seguridad y Accesorios
                 
 </div>
-        <nav>
+        <nav class="displayMenu">
             <ul ><b>Máquinas y Equipamiento</b>
            
        
@@ -91,7 +91,53 @@
         @endforeach
         </div>
         </div>
+      <!--  <div class="displayAtras"><button class="btn btn-success " onClick="window.location.href='/'" id="volver">Volver</button></div>
+-->
     </section>
+
+
+    <aside class="menuLeft asideMobile">
+<div class="p-2" style="border-top: 7px solid #ed1e79;background-color:#006837;color:white" >
+        
+            
+        Máquinas, Equipamiento, Seguridad y Accesorios
+                
+</div>
+        <nav >
+            <ul ><b>Máquinas y Equipamiento</b>
+           
+       
+            @foreach($subsectionC as $subsectionCo)
+                      
+                <li>
+                    <a href="{{$subsectionCo->links}}">
+                        <div>
+                            {{$subsectionCo->title}}</div>
+                    </a>
+                </li>
+            @endforeach
+
+
+            <ul ><b>Seguridad y Accesorios</b>
+           
+       
+            @foreach($subsectionS as $subsectionSe)
+                      
+                <li>
+                    <a href="{{$subsectionSe->links}}">
+                        <div>
+                            {{$subsectionSe->title}}</div>
+                    </a>
+                </li>
+            @endforeach
+
+
+  </ul>
+ 
+
+        </nav>
+
+    </aside>
 
 
 </main>

@@ -684,6 +684,15 @@ h6 {
     border: 0;
 }
 
+.asideMobile {
+    display: none;
+}
+
+
+/*.displayAtras {
+    display: none;
+}*/
+
 .detalleProducto {
     width: 95%;
     display: flex;
@@ -1057,6 +1066,18 @@ h6 {
     .menuLeft {
         width: 100%;
     }
+    .displayMenu {
+        display: none;
+    }
+    .asideMobile {
+        display: block;
+    }
+    /*.displayAtras {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 20px;
+    }*/
 }
 
 @media (max-width: 653px) {

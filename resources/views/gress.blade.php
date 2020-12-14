@@ -11,7 +11,7 @@
 Gress, Porcelanato y Cerámicas
     
 </div>
-        <nav>
+<nav class="displayMenu">
             <ul ><b>CORTE</b>
            
        
@@ -85,8 +85,37 @@ Gress, Porcelanato y Cerámicas
         @endforeach
         </div>
         </div>
+           <!--  <div class="displayAtras"><button class="btn btn-success " onClick="window.location.href='/'" id="volver">Volver</button></div>
+-->
     </section>
 
+    <aside class="menuLeft asideMobile">
+<div class="p-2" style="border-top: 7px solid #ff0000;background-color:#006837;color:white" >
+        
+            
+Gress, Porcelanato y Cerámicas
+    
+</div>
+<nav>
+            <ul ><b>CORTE</b>
+           
+       
+            @foreach($subsectionC as $subsectionCo)
+                      
+                <li>
+                    <a href="{{$subsectionCo->links}}">
+                        <div>
+                            {{$subsectionCo->title}}</div>
+                    </a>
+                </li>
+            @endforeach
+
+  </ul>
+ 
+
+        </nav>
+
+    </aside>
 
 </main>
 

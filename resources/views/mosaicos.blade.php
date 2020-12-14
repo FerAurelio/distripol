@@ -11,7 +11,7 @@
         Mosaicos, Refractarios y Viguetas
                 
 </div>
-        <nav>
+<nav class="displayMenu">
             <ul ><b>CORTE</b>
            
        
@@ -85,8 +85,36 @@
         @endforeach
         </div>
         </div>
+      <!--  <div class="displayAtras"><button class="btn btn-success " onClick="window.location.href='/'" id="volver">Volver</button></div>
+-->
     </section>
+    <aside class="menuLeft asideMobile">
+<div class="p-2" style="border-top: 7px solid #29abe2;background-color:#006837;color:white" >
+        
+            
+        Mosaicos, Refractarios y Viguetas
+                
+</div>
+<nav>
+            <ul ><b>CORTE</b>
+           
+       
+            @foreach($subsectionC as $subsectionCo)
+                      
+                <li>
+                    <a href="{{$subsectionCo->links}}">
+                        <div>
+                            {{$subsectionCo->title}}</div>
+                    </a>
+                </li>
+            @endforeach
 
+  </ul>
+ 
+
+        </nav>
+
+    </aside>
 
 </main>
 

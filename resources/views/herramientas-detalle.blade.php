@@ -11,7 +11,7 @@
         Máquinas, Equipamiento, Seguridad y Accesorios
                 
             </div>
-        <nav>
+            <nav class="displayMenu">
             <ul ><b>Máquinas y Equipamiento</b>
            
        
@@ -53,6 +53,13 @@
     <section class="contenidoProds">
    
     <div class="centrarProductos">
+    <br>
+    @foreach ($subsections as $subsection)
+      
+      • {{$subsection->title}}
+     
+      @endforeach
+      <br><br>
        <div class="center">
       
        
@@ -158,6 +165,7 @@
         
         </div>
         </div>
+        
     </section>
 
 

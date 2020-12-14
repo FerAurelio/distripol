@@ -143,13 +143,13 @@ menu responsive
         <div id="collapseThree" class="collapse" aria-labelledby="btn-industriales" data-parent="#accordionExample">
             <div class="card card-body fdoMenuColl">
                 <ul>
-                    <li><a class="MenColl" href="/industriales/corte">Corte</a></li>
+                    <li><a class="MenColl" href="/pisosIndustriales/corte">Corte</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/industriales/perforado">Perforado</a></li>
+                    <li><a class="MenColl" href="/pisosIndustriales/perforado">Perforado</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/industriales/pulido">Pulido</a></li>
+                    <li><a class="MenColl" href="/pisosIndustriales/pulido">Pulido</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/industriales/adhesivos">Adhesivos y Selladores</a></li>
+                    <li><a class="MenColl" href="/pisosIndustriales/adhesivos2">Adhesivos y Selladores</a></li>
                 </ul>
             </div>
         </div>
@@ -193,9 +193,9 @@ menu responsive
             <div class="card card-body fdoMenuColl">
 
                 <ul>
-                    <li><a class="MenColl" href="/maquinas/herramientas">Herramientas Eléctricas y con Motor a Explosión</a></li>
+                    <li><a class="MenColl" href="/herramientas/amoladoras">Herramientas Eléctricas y con Motor a Explosión</a></li>
                     <div class="dropdown-divider"></div>
-                    <li><a class="MenColl" href="/maquinas/seguridad">Seguridad y Protección Personal</a></li>
+                    <li><a class="MenColl" href="/seguridad/guantes">Seguridad y Protección Personal</a></li>
                 </ul>
 
             </div>

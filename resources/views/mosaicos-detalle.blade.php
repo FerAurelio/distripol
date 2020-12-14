@@ -11,7 +11,7 @@
         Mosaicos, Refractarios y Viguetas
                 
 </div>
-        <nav>
+<nav class="displayMenu">
             <ul ><b>CORTE</b>
            
        
@@ -37,6 +37,13 @@
     <section class="contenidoProds">
     
     <div class="centrarProductos">
+    <br>
+    @foreach ($subsections as $subsection)
+      
+      • {{$subsection->title}}
+     
+      @endforeach
+      <br><br>
        <div class="center">
       
        

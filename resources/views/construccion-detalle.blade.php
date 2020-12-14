@@ -12,7 +12,7 @@
             Construcción, Obra Civil y Obra Vial
         
     </div>
-  <nav>
+    <nav class="displayMenu">
   
 <ul> 
             
@@ -71,6 +71,13 @@
     <section class="contenidoProds">
     
     <div class="centrarProductos">
+    <br>
+    @foreach ($subsections as $subsection)
+      
+      • {{$subsection->title}}
+     
+      @endforeach
+      <br><br>
        <div class="center">
       
        
@@ -260,7 +267,7 @@
        
         
               </div></div>
-        
+           
     </section>
 
 
