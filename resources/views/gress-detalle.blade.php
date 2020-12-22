@@ -38,19 +38,13 @@ Gress, Porcelanato y Cerámicas
     <section class="contenidoProds">
     
     <div class="centrarProductos">
-    <br>
-    @foreach ($subsections as $subsection)
-      
-      • {{$subsection->title}}
-     
-      @endforeach
-      <br><br>
+   
        <div class="center">
       
        
       
               <div class="detalleProducto">  
-  @if($producto->aplication_id != NULL || $producto->characterist != NULL || $producto->diameters != NULL || $producto->segment_id != NULL)     
+  @if($producto->aplication_id != NULL || $producto->characterist != NULL || $producto->diameters != NULL || $producto->segment_id != NULL || $producto->caracterist_image != NULL)     
                  <div class="parte1"> 
   @else
                 <div class="parte1Grande">
@@ -127,24 +121,30 @@ Gress, Porcelanato y Cerámicas
             
             
 
-                  @if ($producto->caracterist != NULL  && $producto->aplication_id != NULL)                     
+                  @if ($producto->characterist === NULL  && $producto->aplication_id === NULL)                     
                   
-                    <div class="parte2">
+                    
                                                @if ($producto->caracterist_image != NULL)
-                          <div class="parte2-1" >
+                                               <div class="parte2">
+                          <div class="parte2-3"  >
                                         
                                                    <h5 class="card-title pl-2" style="background-color: #f1f1f1 ">Características</h5> 
                                                  <div class="tProd pl-3">    
                                                  <a href="data:image/jpeg;base64,{{base64_encode( $producto->caracterist_image)}}" data-lightbox="image3" data-title="{{$producto->title}}"><img src=  "data:image/jpeg;base64,{{base64_encode( $producto->caracterist_image)}}" class="card-img  m-1 imgC" alt="{{$producto->title}}">
                                                  </a></div >
                                                    <br><br><br>
-                                                   
-                                               @else
+                                                   @else
+                                                  <div class="parte2V">
+                                                  @endif 
+                          @else
+                                      
+                                      
+                                               <div class="parte2">
                          <div class="parte2-1" >                                            
                                                 
-                                               @if ($producto->aplication_id != NULL)
+                         @if($producto->aplication_id != NULL)
                                                 <div style="min-height: 180px;"> <h5 class="card-title pl-2" style="background-color: #f1f1f1">Aplicación</h5> 
-                                                 <div class="tProd pl-3">{{$producto->aplication->description}}   
+                                                 <div class="tProd pl-3">{{$producto->aplication->description}}
                                                  </div> 
                                                  @if ($producto->aplication->item1 != NULL)<div class="tProd pl-3">{{$producto->aplication->item1}}</div> @endif
                                                  @if ($producto->aplication->item2 != NULL)<div class="tProd pl-3">{{$producto->aplication->item2}}</div> @endif
@@ -152,25 +152,25 @@ Gress, Porcelanato y Cerámicas
                                                  @if ($producto->aplication->item4 != NULL)<div class="tProd pl-3">{{$producto->aplication->item4}}</div> @endif
                                                  </div> 
                                                 @endif
-                                              @if ($producto->characterist != NULL)
+                        
                                                  <div >
                                                    <h5 class="card-title pl-2" style="background-color: #f1f1f1 ">Características</h5> 
                                                  <div class="tProd pl-3">   {{$producto->characterist}}   
                                                    </div >
                                                    <br><br><br>
                                                   </div>
-                                               @endif
+                                              
                                                      
                                                </div>
-                                               @endif                   
-                    
-                 @else 
-                        <div class="parte2V">
-                  @endif 
+                                                  
+                                               @endif 
+                  
+                        <!--<div class="parte2V">-->
+                  
                                            <div class="parte2-2">
                                                
                                               @if ($producto->segment_id != NULL) 
-                                              <div style="min-height: 180px;">
+                                              <div style="min-height: 180px;margin-left:20px;">
                                                  <h5 class="card-title pl-2" style="border-radius: 0 5px 0 0; background-color: #f1f1f1">Segmentos</h5> 
                                                    @if ($producto->segment->cantidad != NULL)<div class="tProd pl-3">{{$producto->segment->cantidad}}</div> @endif
                                                    @if ($producto->segment->altura != NULL)<div class="tProd pl-3">{{$producto->segment->altura}}</div> @endif
@@ -188,7 +188,7 @@ Gress, Porcelanato y Cerámicas
                                                @endif
                                         
                                                @if ($producto->diameters != NULL)  
-                                               <div >
+                                               <div style="min-height: 180px;margin-left:20px;" >
                                                <h5 class="card-title pl-2" style="background-color: #f1f1f1">Medidas</h5> 
                                                    <div class="tProd pl-3">{{$producto->diameters}}
                                                    <br><br><br>
@@ -234,7 +234,7 @@ Gress, Porcelanato y Cerámicas
        
         
               </div></div>
-          
+           
     </section>
 
 

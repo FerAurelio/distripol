@@ -10,7 +10,7 @@
                     </a></li>
                 <li class="fdoBt" style="border-top: 7px solid #7ac943;"><a href="/marmoleria/corte" >
                         <div >
-                            <h2>Marmolería y  Piedras Industriales</h2>
+                            <h2>Marmolería y  Piedras Naturales</h2>
                         </div>
                     </a></li>
                 <li class="fdoBt" style="border-top: 7px solid #ff931e;"><a href="/pisosIndustriales/corte" >

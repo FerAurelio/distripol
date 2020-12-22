@@ -51,15 +51,8 @@
     
     
     <section class="contenidoProds">
-   
+    
     <div class="centrarProductos">
-    <br>
-    @foreach ($subsections as $subsection)
-      
-      • {{$subsection->title}}
-     
-      @endforeach
-      <br><br>
        <div class="center">
       
        

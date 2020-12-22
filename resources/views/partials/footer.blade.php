@@ -23,7 +23,7 @@
      C.A.B.A. - Argentina       
      </p>
   </div>
-   <div><a href="https://serviciosweb.afip.gob.ar/clavefiscal/qr/publicInfoD.aspx"><img src="../img/dataFiscal.png" alt="Data Fiscal"></a></div>
+   <div><a href="http://qr.afip.gob.ar/?qr=zkj3ylWc6-jh2idJRq1DOQ,," target="_F960AFIPInfo"><img src="../img/dataFiscal.png" alt="Data Fiscal"></a></div>
   
 </footer>
 

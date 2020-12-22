@@ -747,12 +747,16 @@ h6 {
 }
 
 .parte2-1 {
-    width: 49%;
+    width: 25%;
     margin-right: 2%;
 }
 
 .parte2-2 {
-    width: 49%;
+    width: 25%;
+}
+
+.parte2-3 {
+    width: 50%;
 }
 
 .p1-2G {
@@ -863,13 +867,6 @@ h6 {
     }
     .parte2 {
         width: 60%;
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
-        flex-direction: row;
-    }
-    .parte2-1 {
-        width: 48%;
     }
 }
 
