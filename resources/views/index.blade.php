@@ -111,7 +111,7 @@ menu responsive
         <div class="fdoCon" id="btn-marmoleria">
             <a class="btn-secundario  collapsed " href="#collapseTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <div><img src="/img/botonera-ppal/btn_fdo_marm-ch.png" alt="Marmolería y Piedras Industriales"></div>
-                Marmolería y Piedras Industriales
+                Marmolería y Piedras Naturales
             </a>
 
         </div>
