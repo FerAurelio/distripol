@@ -93,26 +93,26 @@ class MarmoleriaController extends Controller
 
   public function listadoDesbaste (){
     $sections= Section::where("category_id", "=" , '2')->get();
-    $subsections= Subsection::where("id", "=" , '14')->get();
+    $subsections= Subsection::where("id", "=" , '2')->get();
     $subsectionC= Subsection::where('section_id','=', '1')->get();
     $subsectionP= Subsection::where('section_id','=', '2')->get();
     $subsectionD= Subsection::where('section_id','=', '3')->get();
     $subsectionAS= Subsection::where('section_id','=', '4')->get();
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
-    $productos= Product::where("subsection_id", "=" , '14')->get();
+    $productos= Product::where("subsection_id", "=" , '2')->get();
 
     return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
   public function listadoDesbaste2 (){
     $sections= Section::where("category_id", "=" , '2')->get();
-    $subsections= Subsection::where("id", "=" , '15')->get();
+    $subsections= Subsection::where("id", "=" , '6')->get();
     $subsectionC= Subsection::where('section_id','=', '1')->get();
     $subsectionP= Subsection::where('section_id','=', '2')->get();
     $subsectionD= Subsection::where('section_id','=', '3')->get();
     $subsectionAS= Subsection::where('section_id','=', '4')->get();
     $subsectionAE= Subsection::where('section_id','=', '5')->get();
-    $productos= Product::where("subsection_id", "=" , '15')->get();
+    $productos= Product::where("subsection_id", "=" , '6')->get();
 
     return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
@@ -180,8 +180,33 @@ public function listadoDesbaste3 (){
 
     return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
+public function listadoDesbaste8 (){
+  $sections= Section::where("category_id", "=" , '2')->get();
+  $subsections= Subsection::where("id", "=" , '14')->get();
+  $subsectionC= Subsection::where('section_id','=', '1')->get();
+  $subsectionP= Subsection::where('section_id','=', '2')->get();
+  $subsectionD= Subsection::where('section_id','=', '3')->get();
+  $subsectionAS= Subsection::where('section_id','=', '4')->get();
+  $subsectionAE= Subsection::where('section_id','=', '5')->get();
+  $productos= Product::where("subsection_id", "=" , '14')->get();
 
-  public function listadoDesbaste8 (){
+  return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
+}
+
+public function listadoDesbaste9 (){
+  $sections= Section::where("category_id", "=" , '2')->get();
+  $subsections= Subsection::where("id", "=" , '15')->get();
+  $subsectionC= Subsection::where('section_id','=', '1')->get();
+  $subsectionP= Subsection::where('section_id','=', '2')->get();
+  $subsectionD= Subsection::where('section_id','=', '3')->get();
+  $subsectionAS= Subsection::where('section_id','=', '4')->get();
+  $subsectionAE= Subsection::where('section_id','=', '5')->get();
+  $productos= Product::where("subsection_id", "=" , '15')->get();
+
+  return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
+}
+
+  public function listadoDesbaste10 (){
     $sections= Section::where("category_id", "=" , '2')->get();
     $subsections= Subsection::where("id", "=" , '33')->get();
     $subsectionC= Subsection::where('section_id','=', '1')->get();
@@ -193,7 +218,7 @@ public function listadoDesbaste3 (){
     return view('marmoleria', compact('subsections','subsectionC','subsectionP','subsectionD','subsectionAE','subsectionAS','productos','sections'));
 }
 
-public function listadoDesbaste9 (){
+public function listadoDesbaste11 (){
     $sections= Section::where("category_id", "=" , '2')->get();
     $subsections= Subsection::where("id", "=" , '48')->get();
     $subsectionC= Subsection::where('section_id','=', '1')->get();

@@ -62,6 +62,8 @@ Route::get('/marmoleria/desbaste6', 'MarmoleriaController@listadoDesbaste6')->na
 Route::get('/marmoleria/desbaste7', 'MarmoleriaController@listadoDesbaste7')->name('seccionMarmDesbaste7');
 Route::get('/marmoleria/desbaste8', 'MarmoleriaController@listadoDesbaste8')->name('seccionMarmDesbaste8');
 Route::get('/marmoleria/desbaste9', 'MarmoleriaController@listadoDesbaste9')->name('seccionMarmDesbaste9');
+Route::get('/marmoleria/desbaste10', 'MarmoleriaController@listadoDesbaste10')->name('seccionMarmDesbaste10');
+Route::get('/marmoleria/desbaste11', 'MarmoleriaController@listadoDesbaste11')->name('seccionMarmDesbaste11');
 Route::get('/marmoleria/adhesivos', 'MarmoleriaController@listadoAdhesivos')->name('seccionMarmAdhesivos');
 Route::get('/marmoleria/adhesivos2', 'MarmoleriaController@listadoAdhesivos2')->name('seccionMarmAdhesivos2');
 Route::get('/marmoleria/equipos', 'MarmoleriaController@listadoEquipos')->name('seccionMarmEquipos');
